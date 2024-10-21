@@ -19,7 +19,7 @@ public class stopwatch {
         endTime = LocalTime.now();
 
 
-    }
+    }//hej
 
     public long elapsedTime() {
         long seconds;
