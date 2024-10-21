@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/aflevering_2/aflevering_2.iml" filepath="$PROJECT_DIR$/aflevering_2/aflevering_2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aflevering_terning/aflevering_terning.iml" filepath="$PROJECT_DIR$/aflevering_terning/aflevering_terning.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aflevering_til_canvas/aflevering_til_canvas.iml" filepath="$PROJECT_DIR$/aflevering_til_canvas/aflevering_til_canvas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/course/course.iml" filepath="$PROJECT_DIR$/course/course.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eksamen/eksamen.iml" filepath="$PROJECT_DIR$/eksamen/eksamen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lek02_simpleprogrammer/lek02_simpleprogrammer.iml" filepath="$PROJECT_DIR$/lek02_simpleprogrammer/lek02_simpleprogrammer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lek03/lek03.iml" filepath="$PROJECT_DIR$/lek03/lek03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lek04/lek04.iml" filepath="$PROJECT_DIR$/lek04/lek04.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lek05/lek05.iml" filepath="$PROJECT_DIR$/lek05/lek05.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lek06/lek06.iml" filepath="$PROJECT_DIR$/lek06/lek06.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lek07/lek07.iml" filepath="$PROJECT_DIR$/lek07/lek07.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lek_08/lek_08.iml" filepath="$PROJECT_DIR$/lek_08/lek_08.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lek_09/lek_09.iml" filepath="$PROJECT_DIR$/lek_09/lek_09.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lek_10/lek_10.iml" filepath="$PROJECT_DIR$/lek_10/lek_10.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lek_11/lek_11.iml" filepath="$PROJECT_DIR$/lek_11/lek_11.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lek_12/lek_12.iml" filepath="$PROJECT_DIR$/lek_12/lek_12.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lek_13/lek_13.iml" filepath="$PROJECT_DIR$/lek_13/lek_13.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lek_18/lek_18.iml" filepath="$PROJECT_DIR$/lek_18/lek_18.iml" />
+      <module fileurl="file://$PROJECT_DIR$/programming 1.iml" filepath="$PROJECT_DIR$/programming 1.iml" />
+    </modules>
+  </component>
+</project>

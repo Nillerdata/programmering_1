@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d6db11fe-b40f-4d1a-89e7-cfa8131a6d61" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$USER_HOME$/.jdks/corretto-21.0.4/lib/src.zip!/java.base/java/util/Scanner.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/aflevering_terning/src/playdice/pigsgame/Pigs.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/aflevering_terning/src/playdice/twodice/RollTwoDice.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/lek03/src/Opgaver/opg_1.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/lek_09/src/model/ArrayApp2.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/lek_09/src/model/EksempelForEach.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/lek_09/src/model/TestPassByValueAndArray.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/lek_09/src/stjerne_opgaver/opg_7_6.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/lek_10/src/opg_hus/App.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/lek_10/src/opg_hus/Gui.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/lek_11/src/klasser/modelemployee/Employee.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/lek_11/src/klasser/modelemployee/EmployeeApp.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/lek_11/src/klasser/opgave04/Departure.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/lek_11/src/opg_9_1/rectangle.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/lek_11/src/opg_9_1/rectangleApp.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/lek_11/src/opg_9_2/stockOpg.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/lek_11/src/opg_9_2/stockOpgApp.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2lEyX5yBMNj3fgRyFzny8fSOySp" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="sortKey" value="BY_TIME_ASCENDING" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.AdditionQuiz.executor": "Run",
+    "Application.App.executor": "Run",
+    "Application.AppNielsG.executor": "Run",
+    "Application.ArrayApp.executor": "Run",
+    "Application.ArrayApp2.executor": "Run",
+    "Application.Array_challenge.executor": "Run",
+    "Application.ChildApp.executor": "Run",
+    "Application.Craps.executor": "Run",
+    "Application.EmployeeApp.executor": "Run",
+    "Application.HelloWorld.executor": "Run",
+    "Application.LoekkerOpgaver.executor": "Run",
+    "Application.MethodsArrayList.executor": "Run",
+    "Application.Opg6_tegnnavn.executor": "Run",
+    "Application.Opg7_ansigt.executor": "Run",
+    "Application.Opg8_HelloJuniorCoder.executor": "Run",
+    "Application.Opg_4.executor": "Run",
+    "Application.Pigs.executor": "Run",
+    "Application.S53_1_9.executor": "Run",
+    "Application.TeamApp.executor": "Run",
+    "Application.Timetabel.executor": "Run",
+    "Application.aflevering_opg_1.executor": "Run",
+    "Application.array.executor": "Run",
+    "Application.arrayListApp.executor": "Run",
+    "Application.arraylist_testing.executor": "Run",
+    "Application.arrays.executor": "Run",
+    "Application.arrays_random_method.executor": "Run",
+    "Application.bog_s133_35.executor": "Run",
+    "Application.casting.executor": "Run",
+    "Application.crap_help.executor": "Run",
+    "Application.declarations.executor": "Run",
+    "Application.example2.App.executor": "Run",
+    "Application.example3.App.executor": "Run",
+    "Application.exercise_01.App.executor": "Run",
+    "Application.exercise_03.App.executor": "Run",
+    "Application.exercise_03_01.App.executor": "Run",
+    "Application.exercise_03_02.App.executor": "Run",
+    "Application.exercise_03_03.App.executor": "Run",
+    "Application.exercise_04.App.executor": "Run",
+    "Application.exercise_04_01.App.executor": "Run",
+    "Application.exercise_04_02.App.executor": "Run",
+    "Application.exercise_05.App.executor": "Run",
+    "Application.exercise_06.App.executor": "Run",
+    "Application.exercise_08.App.executor": "Run",
+    "Application.fanApp.executor": "Run",
+    "Application.fillName.App.executor": "Run",
+    "Application.fizzbuzz.executor": "Run",
+    "Application.kap2_21_22.executor": "Run",
+    "Application.kap2_2_2.executor": "Run",
+    "Application.moms.executor": "Run",
+    "Application.opg2.executor": "Run",
+    "Application.opg2_og6.executor": "Run",
+    "Application.opg3.executor": "Run",
+    "Application.opg3_og7.executor": "Run",
+    "Application.opg5_heltal.executor": "Run",
+    "Application.opg8.executor": "Run",
+    "Application.opg_01.executor": "Run",
+    "Application.opg_01_02.executor": "Run",
+    "Application.opg_02.executor": "Run",
+    "Application.opg_02_smiley.App.executor": "Run",
+    "Application.opg_04.App.executor": "Run",
+    "Application.opg_05.App.executor": "Run",
+    "Application.opg_1.App.executor": "Run",
+    "Application.opg_1.executor": "Run",
+    "Application.opg_4.executor": "Run",
+    "Application.opg_5.executor": "Run",
+    "Application.opg_5heltal.executor": "Run",
+    "Application.opg_6.executor": "Run",
+    "Application.opg_6_2_5.executor": "Run",
+    "Application.opg_6_2_6.executor": "Run",
+    "Application.opg_7_6.executor": "Run",
+    "Application.opg_hus.App.executor": "Run",
+    "Application.opgaver.Opg6_tegnnavn.executor": "Run",
+    "Application.personApp.executor": "Run",
+    "Application.primitive_type_challenge.executor": "Run",
+    "Application.primitive_types.executor": "Run",
+    "Application.rectangleApp.executor": "Run",
+    "Application.rentalApp.executor": "Run",
+    "Application.rr112.App.executor": "Run",
+    "Application.s53_18.executor": "Run",
+    "Application.s53_1_10.executor": "Run",
+    "Application.s54_1_11.executor": "Run",
+    "Application.s_133_opg3_5.executor": "Run",
+    "Application.s_135_3_17.executor": "Run",
+    "Application.s_258_6_4.executor": "Run",
+    "Application.scanner_decimal.executor": "Run",
+    "Application.shapes.example.App.executor": "Run",
+    "Application.stockOpgApp.executor": "Run",
+    "Application.stopwatchApp.executor": "Run",
+    "Application.teamapp.executor": "Run",
+    "Application.øvelseFraBogen.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/niels/IdeaProjects/programming 1/lek_18/src",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\niels\IdeaProjects\programming 1\lek_18\src" />
+      <recent name="C:\Users\niels\IdeaProjects\programming 1\aflevering_til_canvas\src" />
+      <recent name="C:\Users\niels\IdeaProjects\programming 1\aflevering_2\src\model" />
+      <recent name="C:\Users\niels\IdeaProjects\programming 1\lek_12\src" />
+      <recent name="C:\Users\niels\IdeaProjects\programming 1\lek_11\src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\niels\IdeaProjects\programming 1\lek_10\src" />
+      <recent name="C:\Users\niels\IdeaProjects\programming 1\lek_09\src" />
+      <recent name="C:\Users\niels\IdeaProjects\programming 1\lek_08\src" />
+      <recent name="C:\Users\niels\IdeaProjects\programming 1\lek05\src" />
+      <recent name="C:\Users\niels\IdeaProjects\programming 1\lek04\src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.MethodsArrayList">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="App" />
+      <module name="aflevering_2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MethodsArrayList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="model.MethodsArrayList" />
+      <module name="lek_18" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="arrayListApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="opg.arrayListApp" />
+      <module name="lek_18" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="arraylist_testing" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="course.arraylist_testing" />
+      <module name="course" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="stopwatchApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="opg_2.stopwatchApp" />
+      <module name="lek_13" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MethodsArrayList" />
+        <item itemvalue="Application.arrayListApp" />
+        <item itemvalue="Application.stopwatchApp" />
+        <item itemvalue="Application.App" />
+        <item itemvalue="Application.arraylist_testing" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/lek03/src/Opgaver/kap2_21_22.java</url>
+          <line>2</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/lek03/src/Opgaver/opg_4.java</url>
+          <line>2</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/lek04/src/udleveret_if/AdditionQuiz.java</url>
+          <line>4</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/lek06/src/example2/App.java</url>
+          <line>4</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/lek06/src/exercise_03_03/App.java</url>
+          <line>7</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/lek06/src/exercise_04_01/App.java</url>
+          <line>7</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
