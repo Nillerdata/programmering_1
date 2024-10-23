@@ -24,9 +24,10 @@ public class Player {
     public Player(String name, int age){
         this.name=name;
         this.age=age;
+        this.score = 0;
 
     }
     public void addScore(int score){
-        this.score=score;
+        this.score += score;
     }
 }

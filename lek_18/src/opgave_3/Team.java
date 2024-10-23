@@ -16,7 +16,7 @@ public class Team {
 
     }
 
-    public void addPlayer(Player player) {
+    public void addPlayer(Player player)  {
         players.add(player);
     }
 

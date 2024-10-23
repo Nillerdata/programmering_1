@@ -93,7 +93,7 @@ public class MethodsArrayList {
         }
         return evenList;
     }
-
+    //opg 4
     public static void swapFirstAndLast(ArrayList<Integer> list) {
         int temp = list.getFirst();
         list.set(0, list.getLast());
@@ -149,7 +149,7 @@ public class MethodsArrayList {
         }
         return doubles;
     }
-//11.18 s.473
+//11.18 s.473 **
     public static ArrayList<Character> toCharacterArray(String s) {
         ArrayList<Character> list = new ArrayList<Character>();
         for (int i = 0; i < s.length(); i++) {
@@ -158,7 +158,7 @@ public class MethodsArrayList {
         }
         return list;
     }
-//11.13 s.471
+//11.13 s.471 **
     public static void removeDuplicate(ArrayList<Integer> compare) {
         for (int i = 0; i < 10; i++) {
             for (int j = i + 1; j < compare.size(); j++) {
@@ -194,13 +194,13 @@ public class MethodsArrayList {
         compare.add(1);
         compare.add(1);
         compare.add(1);
-        compare.add(1);
-        compare.add(1);
-        compare.add(1);
-        compare.add(1);
-        compare.add(1);
-        compare.add(1);
-        compare.add(1);
+        compare.add(4);
+        compare.add(5);
+        compare.add(6);
+        compare.add(7);
+        compare.add(8);
+        compare.add(9);
+        compare.add(10);
         System.out.println(compare);
         removeDuplicate(compare);
         System.out.println("efter fjernelse af duplikering" + compare);
