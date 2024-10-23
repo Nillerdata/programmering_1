@@ -75,6 +75,7 @@
     "Application.arrays_random_method.executor": "Run",
     "Application.bog_s133_35.executor": "Run",
     "Application.casting.executor": "Run",
+    "Application.challenge_operator.executor": "Run",
     "Application.crap_help.executor": "Run",
     "Application.declarations.executor": "Run",
     "Application.example2.App.executor": "Run",
@@ -97,6 +98,7 @@
     "Application.kap2_21_22.executor": "Run",
     "Application.kap2_2_2.executor": "Run",
     "Application.moms.executor": "Run",
+    "Application.operator_challenge.executor": "Run",
     "Application.opg2.executor": "Run",
     "Application.opg2_og6.executor": "Run",
     "Application.opg3.executor": "Run",
@@ -143,6 +145,7 @@
     "Application.studerendeopgave.studerendeopgave.App.executor": "Run",
     "Application.teamApp.executor": "Run",
     "Application.teamapp.executor": "Run",
+    "Application.ternary_operator.executor": "Run",
     "Application.øvelseFraBogen.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "last_opened_file_path": "C:/Users/niels/IdeaProjects/programming 1/lek_19/src/opgaver_5",
@@ -168,24 +171,17 @@
       <recent name="C:\Users\niels\IdeaProjects\programming 1\lek05\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.studerendeopgave.studerendeopgave.App">
-    <configuration name="opgaver_2.App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="opgaver_2.App" />
-      <module name="lek_19" />
+  <component name="RunManager" selected="Application.operator_challenge">
+    <configuration name="challenge_operator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="course.challenge_operator" />
+      <module name="course" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="opgaver_3.App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="opgaver_3.App" />
-      <module name="lek_19" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="opgaver_4.App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="opgaver_4.App" />
-      <module name="lek_19" />
+    <configuration name="operator_challenge" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="course.operator_challenge" />
+      <module name="course" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -204,13 +200,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ternary_operator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="course.ternary_operator" />
+      <module name="course" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.operator_challenge" />
+        <item itemvalue="Application.ternary_operator" />
+        <item itemvalue="Application.challenge_operator" />
         <item itemvalue="Application.studerendeopgave.studerendeopgave.App" />
         <item itemvalue="Application.opgaver_5.App" />
-        <item itemvalue="Application.opgaver_4.App" />
-        <item itemvalue="Application.opgaver_3.App" />
-        <item itemvalue="Application.opgaver_2.App" />
       </list>
     </recent_temporary>
   </component>
