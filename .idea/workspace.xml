@@ -93,6 +93,7 @@
     "Application.fanApp.executor": "Run",
     "Application.fillName.App.executor": "Run",
     "Application.fizzbuzz.executor": "Run",
+    "Application.guidemos.guidemo_1.App.executor": "Run",
     "Application.kap2_21_22.executor": "Run",
     "Application.kap2_2_2.executor": "Run",
     "Application.moms.executor": "Run",
@@ -119,6 +120,10 @@
     "Application.opg_7_6.executor": "Run",
     "Application.opg_hus.App.executor": "Run",
     "Application.opgaver.Opg6_tegnnavn.executor": "Run",
+    "Application.opgaver_2.App.executor": "Run",
+    "Application.opgaver_3.App.executor": "Run",
+    "Application.opgaver_4.App.executor": "Run",
+    "Application.opgaver_5.App.executor": "Run",
     "Application.personApp.executor": "Run",
     "Application.primitive_type_challenge.executor": "Run",
     "Application.primitive_types.executor": "Run",
@@ -135,11 +140,12 @@
     "Application.shapes.example.App.executor": "Run",
     "Application.stockOpgApp.executor": "Run",
     "Application.stopwatchApp.executor": "Run",
+    "Application.studerendeopgave.studerendeopgave.App.executor": "Run",
     "Application.teamApp.executor": "Run",
     "Application.teamapp.executor": "Run",
     "Application.øvelseFraBogen.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/niels/IdeaProjects/programming 1/lek_18/src",
+    "last_opened_file_path": "C:/Users/niels/IdeaProjects/programming 1/lek_19/src/opgaver_5",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -148,63 +154,63 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\niels\IdeaProjects\programming 1\lek_18\src" />
-      <recent name="C:\Users\niels\IdeaProjects\programming 1\aflevering_til_canvas\src" />
-      <recent name="C:\Users\niels\IdeaProjects\programming 1\aflevering_2\src\model" />
-      <recent name="C:\Users\niels\IdeaProjects\programming 1\lek_12\src" />
-      <recent name="C:\Users\niels\IdeaProjects\programming 1\lek_11\src" />
+      <recent name="C:\Users\niels\IdeaProjects\programming 1\lek_19\src\opgaver_5" />
+      <recent name="C:\Users\niels\IdeaProjects\programming 1\lek_19\src\opgaver_4" />
+      <recent name="C:\Users\niels\IdeaProjects\programming 1\lek_19\src\opgaver_3" />
+      <recent name="C:\Users\niels\IdeaProjects\programming 1\lek_19\src\opgaver_1" />
+      <recent name="C:\Users\niels\IdeaProjects\programming 1\lek_19\src\opgaver" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\niels\IdeaProjects\programming 1\lek_19\src" />
       <recent name="C:\Users\niels\IdeaProjects\programming 1\lek_10\src" />
       <recent name="C:\Users\niels\IdeaProjects\programming 1\lek_09\src" />
       <recent name="C:\Users\niels\IdeaProjects\programming 1\lek_08\src" />
       <recent name="C:\Users\niels\IdeaProjects\programming 1\lek05\src" />
-      <recent name="C:\Users\niels\IdeaProjects\programming 1\lek04\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.teamApp">
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="App" />
-      <module name="aflevering_2" />
+  <component name="RunManager" selected="Application.studerendeopgave.studerendeopgave.App">
+    <configuration name="opgaver_2.App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="opgaver_2.App" />
+      <module name="lek_19" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MethodsArrayList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="model.MethodsArrayList" />
-      <module name="lek_18" />
+    <configuration name="opgaver_3.App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="opgaver_3.App" />
+      <module name="lek_19" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="arrayListApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="opg.arrayListApp" />
-      <module name="lek_18" />
+    <configuration name="opgaver_4.App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="opgaver_4.App" />
+      <module name="lek_19" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="stopwatchApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="opg_2.stopwatchApp" />
-      <module name="lek_13" />
+    <configuration name="opgaver_5.App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="opgaver_5.App" />
+      <module name="lek_19" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="teamApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="opgave_3.teamApp" />
-      <module name="lek_18" />
+    <configuration name="studerendeopgave.studerendeopgave.App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="studerendeopgave.studerendeopgave.App" />
+      <module name="lek_19" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.teamApp" />
-        <item itemvalue="Application.MethodsArrayList" />
-        <item itemvalue="Application.arrayListApp" />
-        <item itemvalue="Application.stopwatchApp" />
-        <item itemvalue="Application.App" />
+        <item itemvalue="Application.studerendeopgave.studerendeopgave.App" />
+        <item itemvalue="Application.opgaver_5.App" />
+        <item itemvalue="Application.opgaver_4.App" />
+        <item itemvalue="Application.opgaver_3.App" />
+        <item itemvalue="Application.opgaver_2.App" />
       </list>
     </recent_temporary>
   </component>
