@@ -58,6 +58,7 @@
     "Application.EmployeeApp.executor": "Run",
     "Application.HelloWorld.executor": "Run",
     "Application.LoekkerOpgaver.executor": "Run",
+    "Application.MainChallenge.executor": "Run",
     "Application.MethodsArrayList.executor": "Run",
     "Application.Opg6_tegnnavn.executor": "Run",
     "Application.Opg7_ansigt.executor": "Run",
@@ -75,6 +76,7 @@
     "Application.arrays_random_method.executor": "Run",
     "Application.bog_s133_35.executor": "Run",
     "Application.casting.executor": "Run",
+    "Application.challenge.executor": "Run",
     "Application.challenge_operator.executor": "Run",
     "Application.crap_help.executor": "Run",
     "Application.declarations.executor": "Run",
@@ -97,6 +99,7 @@
     "Application.guidemos.guidemo_1.App.executor": "Run",
     "Application.kap2_21_22.executor": "Run",
     "Application.kap2_2_2.executor": "Run",
+    "Application.mainChallenge.executor": "Run",
     "Application.moms.executor": "Run",
     "Application.operator_challenge.executor": "Run",
     "Application.opg2.executor": "Run",
@@ -148,7 +151,7 @@
     "Application.ternary_operator.executor": "Run",
     "Application.øvelseFraBogen.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/niels/IdeaProjects/programming 1/lek_19/src/opgaver_5",
+    "last_opened_file_path": "C:/Users/niels/IdeaProjects/programming 1/course/src/course",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -157,63 +160,63 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\niels\IdeaProjects\programming 1\course\src\course" />
       <recent name="C:\Users\niels\IdeaProjects\programming 1\lek_19\src\opgaver_5" />
       <recent name="C:\Users\niels\IdeaProjects\programming 1\lek_19\src\opgaver_4" />
       <recent name="C:\Users\niels\IdeaProjects\programming 1\lek_19\src\opgaver_3" />
       <recent name="C:\Users\niels\IdeaProjects\programming 1\lek_19\src\opgaver_1" />
-      <recent name="C:\Users\niels\IdeaProjects\programming 1\lek_19\src\opgaver" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\niels\IdeaProjects\programming 1\course\src" />
       <recent name="C:\Users\niels\IdeaProjects\programming 1\lek_19\src" />
       <recent name="C:\Users\niels\IdeaProjects\programming 1\lek_10\src" />
       <recent name="C:\Users\niels\IdeaProjects\programming 1\lek_09\src" />
       <recent name="C:\Users\niels\IdeaProjects\programming 1\lek_08\src" />
-      <recent name="C:\Users\niels\IdeaProjects\programming 1\lek05\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.operator_challenge">
-    <configuration name="challenge_operator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="course.challenge_operator" />
+  <component name="RunManager" selected="Application.challenge">
+    <configuration name="MainChallenge" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="course.MainChallenge" />
       <module name="course" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="operator_challenge" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="course.operator_challenge" />
+    <configuration name="challenge" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="methodChallenge.challenge" />
       <module name="course" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="opgaver_5.App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="opgaver_5.App" />
+    <configuration name="mainChallenge" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="course.mainChallenge" />
+      <module name="course" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="opgaver_2.App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="opgaver_2.App" />
       <module name="lek_19" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="studerendeopgave.studerendeopgave.App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="studerendeopgave.studerendeopgave.App" />
+    <configuration name="opgaver_4.App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="opgaver_4.App" />
       <module name="lek_19" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ternary_operator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="course.ternary_operator" />
-      <module name="course" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.operator_challenge" />
-        <item itemvalue="Application.ternary_operator" />
-        <item itemvalue="Application.challenge_operator" />
-        <item itemvalue="Application.studerendeopgave.studerendeopgave.App" />
-        <item itemvalue="Application.opgaver_5.App" />
+        <item itemvalue="Application.challenge" />
+        <item itemvalue="Application.MainChallenge" />
+        <item itemvalue="Application.mainChallenge" />
+        <item itemvalue="Application.opgaver_4.App" />
+        <item itemvalue="Application.opgaver_2.App" />
       </list>
     </recent_temporary>
   </component>
