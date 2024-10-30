@@ -35,6 +35,8 @@
     <setting file="file://$PROJECT_DIR$/lek_11/src/opg_9_1/rectangleApp.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/lek_11/src/opg_9_2/stockOpg.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/lek_11/src/opg_9_2/stockOpgApp.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/lek_20/src/demoinputdialog/Gui.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/lek_20/src/opgave_1/Gui.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
@@ -45,178 +47,194 @@
     <option name="showLibraryContents" value="true" />
     <option name="sortKey" value="BY_TIME_ASCENDING" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.AdditionQuiz.executor": "Run",
-    "Application.App.executor": "Run",
-    "Application.AppNielsG.executor": "Run",
-    "Application.ArrayApp.executor": "Run",
-    "Application.ArrayApp2.executor": "Run",
-    "Application.Array_challenge.executor": "Run",
-    "Application.ChildApp.executor": "Run",
-    "Application.Craps.executor": "Run",
-    "Application.EmployeeApp.executor": "Run",
-    "Application.HelloWorld.executor": "Run",
-    "Application.LoekkerOpgaver.executor": "Run",
-    "Application.MainChallenge.executor": "Run",
-    "Application.MethodsArrayList.executor": "Run",
-    "Application.Opg6_tegnnavn.executor": "Run",
-    "Application.Opg7_ansigt.executor": "Run",
-    "Application.Opg8_HelloJuniorCoder.executor": "Run",
-    "Application.Opg_4.executor": "Run",
-    "Application.Pigs.executor": "Run",
-    "Application.S53_1_9.executor": "Run",
-    "Application.TeamApp.executor": "Run",
-    "Application.Timetabel.executor": "Run",
-    "Application.aflevering_opg_1.executor": "Run",
-    "Application.array.executor": "Run",
-    "Application.arrayListApp.executor": "Run",
-    "Application.arraylist_testing.executor": "Run",
-    "Application.arrays.executor": "Run",
-    "Application.arrays_random_method.executor": "Run",
-    "Application.bog_s133_35.executor": "Run",
-    "Application.casting.executor": "Run",
-    "Application.challenge.executor": "Run",
-    "Application.challenge_operator.executor": "Run",
-    "Application.crap_help.executor": "Run",
-    "Application.declarations.executor": "Run",
-    "Application.example2.App.executor": "Run",
-    "Application.example3.App.executor": "Run",
-    "Application.exercise_01.App.executor": "Run",
-    "Application.exercise_03.App.executor": "Run",
-    "Application.exercise_03_01.App.executor": "Run",
-    "Application.exercise_03_02.App.executor": "Run",
-    "Application.exercise_03_03.App.executor": "Run",
-    "Application.exercise_04.App.executor": "Run",
-    "Application.exercise_04_01.App.executor": "Run",
-    "Application.exercise_04_02.App.executor": "Run",
-    "Application.exercise_05.App.executor": "Run",
-    "Application.exercise_06.App.executor": "Run",
-    "Application.exercise_08.App.executor": "Run",
-    "Application.fanApp.executor": "Run",
-    "Application.fillName.App.executor": "Run",
-    "Application.fizzbuzz.executor": "Run",
-    "Application.guidemos.guidemo_1.App.executor": "Run",
-    "Application.kap2_21_22.executor": "Run",
-    "Application.kap2_2_2.executor": "Run",
-    "Application.mainChallenge.executor": "Run",
-    "Application.moms.executor": "Run",
-    "Application.operator_challenge.executor": "Run",
-    "Application.opg2.executor": "Run",
-    "Application.opg2_og6.executor": "Run",
-    "Application.opg3.executor": "Run",
-    "Application.opg3_og7.executor": "Run",
-    "Application.opg5_heltal.executor": "Run",
-    "Application.opg8.executor": "Run",
-    "Application.opg_01.executor": "Run",
-    "Application.opg_01_02.executor": "Run",
-    "Application.opg_02.executor": "Run",
-    "Application.opg_02_smiley.App.executor": "Run",
-    "Application.opg_04.App.executor": "Run",
-    "Application.opg_05.App.executor": "Run",
-    "Application.opg_1.App.executor": "Run",
-    "Application.opg_1.executor": "Run",
-    "Application.opg_4.executor": "Run",
-    "Application.opg_5.executor": "Run",
-    "Application.opg_5heltal.executor": "Run",
-    "Application.opg_6.executor": "Run",
-    "Application.opg_6_2_5.executor": "Run",
-    "Application.opg_6_2_6.executor": "Run",
-    "Application.opg_7_6.executor": "Run",
-    "Application.opg_hus.App.executor": "Run",
-    "Application.opgaver.Opg6_tegnnavn.executor": "Run",
-    "Application.opgaver_2.App.executor": "Run",
-    "Application.opgaver_3.App.executor": "Run",
-    "Application.opgaver_4.App.executor": "Run",
-    "Application.opgaver_5.App.executor": "Run",
-    "Application.personApp.executor": "Run",
-    "Application.primitive_type_challenge.executor": "Run",
-    "Application.primitive_types.executor": "Run",
-    "Application.rectangleApp.executor": "Run",
-    "Application.rentalApp.executor": "Run",
-    "Application.rr112.App.executor": "Run",
-    "Application.s53_18.executor": "Run",
-    "Application.s53_1_10.executor": "Run",
-    "Application.s54_1_11.executor": "Run",
-    "Application.s_133_opg3_5.executor": "Run",
-    "Application.s_135_3_17.executor": "Run",
-    "Application.s_258_6_4.executor": "Run",
-    "Application.scanner_decimal.executor": "Run",
-    "Application.shapes.example.App.executor": "Run",
-    "Application.stockOpgApp.executor": "Run",
-    "Application.stopwatchApp.executor": "Run",
-    "Application.studerendeopgave.studerendeopgave.App.executor": "Run",
-    "Application.teamApp.executor": "Run",
-    "Application.teamapp.executor": "Run",
-    "Application.ternary_operator.executor": "Run",
-    "Application.øvelseFraBogen.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/niels/IdeaProjects/programming 1/course/src/course",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.AdditionQuiz.executor&quot;: &quot;Run&quot;,
+    &quot;Application.App.executor&quot;: &quot;Run&quot;,
+    &quot;Application.AppNielsG.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ArrayApp.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ArrayApp2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Array_challenge.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ChildApp.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Craps.executor&quot;: &quot;Run&quot;,
+    &quot;Application.EmployeeApp.executor&quot;: &quot;Run&quot;,
+    &quot;Application.HelloWorld.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LoekkerOpgaver.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MainChallenge.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MethodsArrayList.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Opg6_tegnnavn.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Opg7_ansigt.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Opg8_HelloJuniorCoder.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Opg_4.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Pigs.executor&quot;: &quot;Run&quot;,
+    &quot;Application.S53_1_9.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TeamApp.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Timetabel.executor&quot;: &quot;Run&quot;,
+    &quot;Application.YatzyApp.executor&quot;: &quot;Run&quot;,
+    &quot;Application.aflevering_opg_1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.array.executor&quot;: &quot;Run&quot;,
+    &quot;Application.arrayListApp.executor&quot;: &quot;Run&quot;,
+    &quot;Application.arraylist_testing.executor&quot;: &quot;Run&quot;,
+    &quot;Application.arrays.executor&quot;: &quot;Run&quot;,
+    &quot;Application.arrays_random_method.executor&quot;: &quot;Run&quot;,
+    &quot;Application.bog_s133_35.executor&quot;: &quot;Run&quot;,
+    &quot;Application.casting.executor&quot;: &quot;Run&quot;,
+    &quot;Application.challenge.executor&quot;: &quot;Run&quot;,
+    &quot;Application.challenge_operator.executor&quot;: &quot;Run&quot;,
+    &quot;Application.crap_help.executor&quot;: &quot;Run&quot;,
+    &quot;Application.declarations.executor&quot;: &quot;Run&quot;,
+    &quot;Application.demo2listview.App.executor&quot;: &quot;Run&quot;,
+    &quot;Application.demoopenwindow.App.executor&quot;: &quot;Run&quot;,
+    &quot;Application.example2.App.executor&quot;: &quot;Run&quot;,
+    &quot;Application.example3.App.executor&quot;: &quot;Run&quot;,
+    &quot;Application.exercise_01.App.executor&quot;: &quot;Run&quot;,
+    &quot;Application.exercise_03.App.executor&quot;: &quot;Run&quot;,
+    &quot;Application.exercise_03_01.App.executor&quot;: &quot;Run&quot;,
+    &quot;Application.exercise_03_02.App.executor&quot;: &quot;Run&quot;,
+    &quot;Application.exercise_03_03.App.executor&quot;: &quot;Run&quot;,
+    &quot;Application.exercise_04.App.executor&quot;: &quot;Run&quot;,
+    &quot;Application.exercise_04_01.App.executor&quot;: &quot;Run&quot;,
+    &quot;Application.exercise_04_02.App.executor&quot;: &quot;Run&quot;,
+    &quot;Application.exercise_05.App.executor&quot;: &quot;Run&quot;,
+    &quot;Application.exercise_06.App.executor&quot;: &quot;Run&quot;,
+    &quot;Application.exercise_08.App.executor&quot;: &quot;Run&quot;,
+    &quot;Application.fanApp.executor&quot;: &quot;Run&quot;,
+    &quot;Application.fillName.App.executor&quot;: &quot;Run&quot;,
+    &quot;Application.fizzbuzz.executor&quot;: &quot;Run&quot;,
+    &quot;Application.guidemos.guidemo_1.App.executor&quot;: &quot;Run&quot;,
+    &quot;Application.kap2_21_22.executor&quot;: &quot;Run&quot;,
+    &quot;Application.kap2_2_2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.mainChallenge.executor&quot;: &quot;Run&quot;,
+    &quot;Application.moms.executor&quot;: &quot;Run&quot;,
+    &quot;Application.operator_challenge.executor&quot;: &quot;Run&quot;,
+    &quot;Application.opg2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.opg2_og6.executor&quot;: &quot;Run&quot;,
+    &quot;Application.opg3.executor&quot;: &quot;Run&quot;,
+    &quot;Application.opg3_og7.executor&quot;: &quot;Run&quot;,
+    &quot;Application.opg5_heltal.executor&quot;: &quot;Run&quot;,
+    &quot;Application.opg8.executor&quot;: &quot;Run&quot;,
+    &quot;Application.opg_01.executor&quot;: &quot;Run&quot;,
+    &quot;Application.opg_01_02.executor&quot;: &quot;Run&quot;,
+    &quot;Application.opg_02.executor&quot;: &quot;Run&quot;,
+    &quot;Application.opg_02_smiley.App.executor&quot;: &quot;Run&quot;,
+    &quot;Application.opg_04.App.executor&quot;: &quot;Run&quot;,
+    &quot;Application.opg_05.App.executor&quot;: &quot;Run&quot;,
+    &quot;Application.opg_1.App.executor&quot;: &quot;Run&quot;,
+    &quot;Application.opg_1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.opg_4.executor&quot;: &quot;Run&quot;,
+    &quot;Application.opg_5.executor&quot;: &quot;Run&quot;,
+    &quot;Application.opg_5heltal.executor&quot;: &quot;Run&quot;,
+    &quot;Application.opg_6.executor&quot;: &quot;Run&quot;,
+    &quot;Application.opg_6_2_5.executor&quot;: &quot;Run&quot;,
+    &quot;Application.opg_6_2_6.executor&quot;: &quot;Run&quot;,
+    &quot;Application.opg_7_6.executor&quot;: &quot;Run&quot;,
+    &quot;Application.opg_hus.App.executor&quot;: &quot;Run&quot;,
+    &quot;Application.opgave_1.App.executor&quot;: &quot;Run&quot;,
+    &quot;Application.opgaver.Opg6_tegnnavn.executor&quot;: &quot;Run&quot;,
+    &quot;Application.opgaver_2.App.executor&quot;: &quot;Run&quot;,
+    &quot;Application.opgaver_3.App.executor&quot;: &quot;Run&quot;,
+    &quot;Application.opgaver_4.App.executor&quot;: &quot;Run&quot;,
+    &quot;Application.opgaver_5.App.executor&quot;: &quot;Run&quot;,
+    &quot;Application.personApp.executor&quot;: &quot;Run&quot;,
+    &quot;Application.positiveNegativeOrZero.executor&quot;: &quot;Run&quot;,
+    &quot;Application.primitive_type_challenge.executor&quot;: &quot;Run&quot;,
+    &quot;Application.primitive_types.executor&quot;: &quot;Run&quot;,
+    &quot;Application.rectangleApp.executor&quot;: &quot;Run&quot;,
+    &quot;Application.rentalApp.executor&quot;: &quot;Run&quot;,
+    &quot;Application.rr112.App.executor&quot;: &quot;Run&quot;,
+    &quot;Application.s53_18.executor&quot;: &quot;Run&quot;,
+    &quot;Application.s53_1_10.executor&quot;: &quot;Run&quot;,
+    &quot;Application.s54_1_11.executor&quot;: &quot;Run&quot;,
+    &quot;Application.s_133_opg3_5.executor&quot;: &quot;Run&quot;,
+    &quot;Application.s_135_3_17.executor&quot;: &quot;Run&quot;,
+    &quot;Application.s_258_6_4.executor&quot;: &quot;Run&quot;,
+    &quot;Application.scanner_decimal.executor&quot;: &quot;Run&quot;,
+    &quot;Application.shapes.example.App.executor&quot;: &quot;Run&quot;,
+    &quot;Application.stockOpgApp.executor&quot;: &quot;Run&quot;,
+    &quot;Application.stopwatchApp.executor&quot;: &quot;Run&quot;,
+    &quot;Application.studerendeopgave.studerendeopgave.App.executor&quot;: &quot;Run&quot;,
+    &quot;Application.teamApp.executor&quot;: &quot;Run&quot;,
+    &quot;Application.teamapp.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ternary_operator.executor&quot;: &quot;Run&quot;,
+    &quot;Application.øvelseFraBogen.executor&quot;: &quot;Run&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;JUnit.YatzyTest.executor&quot;: &quot;Run&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/niels/IdeaProjects/programming 1/opgaveYatzy/src/model&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
+    &quot;two.files.diff.last.used.file&quot;: &quot;C:/Users/niels/IdeaProjects/programming 1/lek_20/src/demoopenwindow/MovieInputWindow.java&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\niels\IdeaProjects\programming 1\opgaveYatzy\src\model" />
+      <recent name="C:\Users\niels\IdeaProjects\programming 1\lek_20\src\opgave_1" />
+      <recent name="C:\Users\niels\IdeaProjects\programming 1\lek_20\src\skabelon" />
+      <recent name="C:\Users\niels\IdeaProjects\programming 1\lek_20\src" />
       <recent name="C:\Users\niels\IdeaProjects\programming 1\course\src\course" />
-      <recent name="C:\Users\niels\IdeaProjects\programming 1\lek_19\src\opgaver_5" />
-      <recent name="C:\Users\niels\IdeaProjects\programming 1\lek_19\src\opgaver_4" />
-      <recent name="C:\Users\niels\IdeaProjects\programming 1\lek_19\src\opgaver_3" />
-      <recent name="C:\Users\niels\IdeaProjects\programming 1\lek_19\src\opgaver_1" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\niels\IdeaProjects\programming 1\opgaveYatzy\src" />
       <recent name="C:\Users\niels\IdeaProjects\programming 1\course\src" />
       <recent name="C:\Users\niels\IdeaProjects\programming 1\lek_19\src" />
       <recent name="C:\Users\niels\IdeaProjects\programming 1\lek_10\src" />
       <recent name="C:\Users\niels\IdeaProjects\programming 1\lek_09\src" />
-      <recent name="C:\Users\niels\IdeaProjects\programming 1\lek_08\src" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="opgave_1" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.challenge">
-    <configuration name="MainChallenge" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="course.MainChallenge" />
-      <module name="course" />
+  <component name="RunManager" selected="JUnit.YatzyTest">
+    <configuration name="YatzyApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gui.YatzyApp" />
+      <module name="opgaveYatzy" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="challenge" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="methodChallenge.challenge" />
-      <module name="course" />
+    <configuration name="demo2listview.App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="demo2listview.App" />
+      <module name="lek_20" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="mainChallenge" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="course.mainChallenge" />
-      <module name="course" />
+    <configuration name="demoopenwindow.App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="demoopenwindow.App" />
+      <module name="lek_20" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="opgaver_2.App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="opgaver_2.App" />
-      <module name="lek_19" />
+    <configuration name="opgave_1.App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="opgave_1.App" />
+      <module name="lek_20" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="opgaver_4.App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="opgaver_4.App" />
-      <module name="lek_19" />
+    <configuration name="YatzyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="opgaveYatzy" />
+      <option name="PACKAGE_NAME" value="model" />
+      <option name="MAIN_CLASS_NAME" value="model.YatzyTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.challenge" />
-        <item itemvalue="Application.MainChallenge" />
-        <item itemvalue="Application.mainChallenge" />
-        <item itemvalue="Application.opgaver_4.App" />
-        <item itemvalue="Application.opgaver_2.App" />
+        <item itemvalue="JUnit.YatzyTest" />
+        <item itemvalue="Application.YatzyApp" />
+        <item itemvalue="Application.demo2listview.App" />
+        <item itemvalue="Application.opgave_1.App" />
+        <item itemvalue="Application.demoopenwindow.App" />
       </list>
     </recent_temporary>
   </component>
