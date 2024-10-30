@@ -13,6 +13,10 @@ import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 import model.YatzyDice;
 
+import java.lang.reflect.Method;
+import java.util.ArrayList;
+import java.util.Arrays;
+
 
 public class YatzyGui extends Application {
 
@@ -117,43 +121,42 @@ public class YatzyGui extends Application {
             scorePane.add(lblResult, 0, i);
             TextField txfResult = new TextField();
             txfResults[i] = txfResult;
-            txfResult.setPrefWidth(25);
+            txfResult.setPrefWidth(30);
             txfResult.setEditable(false);
             txfResult.setOnMouseClicked(event -> this.chooseFieldAction(event));
             scorePane.add(txfResult, 1, i);
 
         }
         Label lblSumSame = new Label("Sum");
-        scorePane.add(lblSumSame,3,5);
+        scorePane.add(lblSumSame, 3, 5);
 
-         txfSumSame = new TextField();
-        scorePane.add(txfSumSame,4,5);
+        txfSumSame = new TextField();
+        scorePane.add(txfSumSame, 4, 5);
         txfSumSame.setEditable(false);
-        txfSumSame.setPrefWidth(25);
+        txfSumSame.setPrefWidth(30);
 
         Label lblBonus = new Label("Bonus");
-        scorePane.add(lblBonus,5,5);
+        scorePane.add(lblBonus, 5, 5);
 
         txfBonus = new TextField();
-        scorePane.add(txfBonus,6,5);
+        scorePane.add(txfBonus, 6, 5);
         txfBonus.setEditable(false);
-        txfBonus.setPrefWidth(25);
+        txfBonus.setPrefWidth(30);
 
 
-
-        Label lblSumOther  = new Label("Sum :");
-        scorePane.add(lblSumOther,3,14);
+        Label lblSumOther = new Label("Sum :");
+        scorePane.add(lblSumOther, 3, 14);
 
         txfSumOther = new TextField();
-        scorePane.add(txfSumOther,4,14);
+        scorePane.add(txfSumOther, 4, 14);
         txfSumOther.setEditable(false);
         txfSumOther.setPrefWidth(25);
 
         Label lblTotal = new Label("Total :");
-        scorePane.add(lblTotal,5,14);
+        scorePane.add(lblTotal, 5, 14);
 
         txfTotal = new TextField();
-        scorePane.add(txfTotal,6,14);
+        scorePane.add(txfTotal, 6, 14);
         txfTotal.setPrefWidth(25);
         txfTotal.setEditable(false);
     }
@@ -165,21 +168,24 @@ public class YatzyGui extends Application {
     // Create a method for btnRoll's action.
     // Hint: Create small helper methods to be used in the action method.
     // TODO
-    public void rollAction(){
-        for(int i = 0; i<holds.length; i++){
+    public void rollAction() {
+
+        for (int i = 0; i < holds.length; i++) {
             holds[i] = chbHolds[i].isSelected();
         }
         yatzy.throwDice(holds);
-        for (int i= 0 ; i < txfValues.length; i++){
-            txfValues[i].setText(yatzy.getValues()[i]+"");
-
-            if(yatzy.getThrowCount() == 3){
-                btnRoll.setDisable(true);
-
-            }
-            lblRolled.setText("Rolled : " + yatzy.getThrowCount());
+        for (int i = 0; i < txfValues.length; i++) {
+            txfValues[i].setText(yatzy.getValues()[i] + "");
         }
+        if (yatzy.getThrowCount() == 3) {
+            btnRoll.setDisable(true);
+        }
+        lblRolled.setText("Rolled : " + yatzy.getThrowCount());
 
+        int[] result = yatzy.getResults();
+        for (int i = 0; i < result.length; i++) {
+            txfResults[i].setText(Integer.toString(result[i]));
+        }
     }
 
 
@@ -189,7 +195,14 @@ public class YatzyGui extends Application {
     // Hint: Create small helper methods to be used in the mouse click method.
     // TODO
     public void chooseFieldAction(Event event) {
-        TextField txt = ((TextField) event.getSource());
+
+        TextField txfresultater = ((TextField) event.getSource());
+        txfresultater.setDisable(true);
+
+
     }
 
+
 }
+
+
