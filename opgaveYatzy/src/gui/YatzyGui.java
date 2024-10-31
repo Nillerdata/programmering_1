@@ -85,7 +85,8 @@ public class YatzyGui extends Application {
             CheckBox chbValue = new CheckBox("Hold");
             dicePane.add(chbValue, i, 1);
             chbHolds[i] = chbValue;
-            chbHolds[i].setDisable(true);
+            chbHolds[i].setDisable(true); /*Sørger for at man i starten af spillet
+              ikke bare kan vælge hold og lade være med at bruge terninger*/
         }
         lblRolled = new Label("Rolled : " + yatzy.getThrowCount());
         dicePane.add(lblRolled, 4, 2);
@@ -170,7 +171,7 @@ public class YatzyGui extends Application {
 
         for (int i = 0; i < holds.length; i++) {
             holds[i] = chbHolds[i].isSelected();
-            chbHolds[i].setDisable(false);
+            chbHolds[i].setDisable(false); /*l88 se reference */
         }
         yatzy.throwDice(holds);
         for (int i = 0; i < txfValues.length; i++) {
@@ -185,7 +186,7 @@ public class YatzyGui extends Application {
         txfSumOther.setText("0");
 
 
-        int[] result = yatzy.getResults();
+        int[] result = yatzy.getResults(); //spørge Thomas/Lasse, hvordan dette fungerer fra 188
         for (int i = 0; i < result.length; i++) {
 
             if (!txfResults[i].isDisabled()) {
@@ -225,20 +226,20 @@ public class YatzyGui extends Application {
     public void chooseFieldAction(Event event) {
         TextField txfresultater = ((TextField) event.getSource());
 
-
-        txfresultater.setDisable(true);
+        txfresultater.setDisable(true);//disable det resultat du har valgt
         yatzy.resetThrowCount();
         lblRolled.setText("rolled: " + yatzy.getThrowCount());
         for (int i = 0; i < chbHolds.length; i++) {
             chbHolds[i].setSelected(false);
             txfValues[i].clear();
-            chbHolds[i].setDisable(true);
+            chbHolds[i].setDisable(true); //sørger for at du ikke kan starte næste kast med manglende terning
         }
+        /*Fjerner de resultater der ikke blev trykket på */
         for (int i = 0; i < 15; i++) {
             if (!txfResults[i].isDisabled()) {
                 txfResults[i].clear();
             }
-            btnRoll.setDisable(false);//sørger for at uanset hvad, kan du slå igen
+            btnRoll.setDisable(false);/*l 180 disablede uden at slå til igen. */
         }
 
     }
