@@ -16,6 +16,7 @@ import model.YatzyDice;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Objects;
 
 
 public class YatzyGui extends Application {
@@ -89,6 +90,7 @@ public class YatzyGui extends Application {
             CheckBox chbValue = new CheckBox("Hold");
             dicePane.add(chbValue, i, 1);
             chbHolds[i] = chbValue;
+            chbHolds[i].setDisable(true);
         }
         lblRolled = new Label("Rolled : " + yatzy.getThrowCount());
         dicePane.add(lblRolled, 4, 2);
@@ -124,13 +126,14 @@ public class YatzyGui extends Application {
             txfResult.setPrefWidth(30);
             txfResult.setEditable(false);
             txfResult.setOnMouseClicked(event -> this.chooseFieldAction(event));
+
             scorePane.add(txfResult, 1, i);
 
         }
         Label lblSumSame = new Label("Sum");
         scorePane.add(lblSumSame, 3, 5);
 
-        txfSumSame = new TextField();
+        txfSumSame = new TextField("0");
         scorePane.add(txfSumSame, 4, 5);
         txfSumSame.setEditable(false);
         txfSumSame.setPrefWidth(30);
@@ -138,7 +141,7 @@ public class YatzyGui extends Application {
         Label lblBonus = new Label("Bonus");
         scorePane.add(lblBonus, 5, 5);
 
-        txfBonus = new TextField();
+        txfBonus = new TextField("0");
         scorePane.add(txfBonus, 6, 5);
         txfBonus.setEditable(false);
         txfBonus.setPrefWidth(30);
@@ -147,7 +150,7 @@ public class YatzyGui extends Application {
         Label lblSumOther = new Label("Sum :");
         scorePane.add(lblSumOther, 3, 14);
 
-        txfSumOther = new TextField();
+        txfSumOther = new TextField("0");
         scorePane.add(txfSumOther, 4, 14);
         txfSumOther.setEditable(false);
         txfSumOther.setPrefWidth(25);
@@ -155,7 +158,7 @@ public class YatzyGui extends Application {
         Label lblTotal = new Label("Total :");
         scorePane.add(lblTotal, 5, 14);
 
-        txfTotal = new TextField();
+        txfTotal = new TextField("0");
         scorePane.add(txfTotal, 6, 14);
         txfTotal.setPrefWidth(25);
         txfTotal.setEditable(false);
@@ -172,37 +175,77 @@ public class YatzyGui extends Application {
 
         for (int i = 0; i < holds.length; i++) {
             holds[i] = chbHolds[i].isSelected();
+            chbHolds[i].setDisable(false);
         }
         yatzy.throwDice(holds);
         for (int i = 0; i < txfValues.length; i++) {
             txfValues[i].setText(yatzy.getValues()[i] + "");
+
         }
         if (yatzy.getThrowCount() == 3) {
             btnRoll.setDisable(true);
         }
         lblRolled.setText("Rolled : " + yatzy.getThrowCount());
+        txfSumSame.setText("0");
+        txfSumOther.setText("0");
+
 
         int[] result = yatzy.getResults();
         for (int i = 0; i < result.length; i++) {
-            txfResults[i].setText(Integer.toString(result[i]));
+
+            if (!txfResults[i].isDisabled()) {
+                txfResults[i].setText(result[i] + "");
+
+            } else if (i < 6) {
+                int int1 = Integer.parseInt(txfResults[i].getText());
+                int int2 = Integer.parseInt(txfSumSame.getText());
+
+                txfSumSame.setText((int1 + int2) + "");
+            } else {
+                int int1 = Integer.parseInt(txfResults[i].getText());
+                int int2 = Integer.parseInt(txfSumOther.getText());
+
+                txfSumOther.setText((int1 + int2) + "");
+            }
         }
+        if (Integer.parseInt(txfSumSame.getText()) >= 63) {
+            txfBonus.setText("50");
+        }
+        int int1 = Integer.parseInt(txfSumSame.getText());
+        int int2 = Integer.parseInt(txfSumOther.getText());
+        int int3 = Integer.parseInt(txfBonus.getText());
+
+        if (txfBonus.getText().equals("0")) {
+            txfTotal.setText((int1 + int2 + int3) + "");
+        } else {
+            txfTotal.setText((int1 + int2) + "");
+        }
+
     }
-
-
     // -------------------------------------------------------------------------
 
     // Create a method for mouse click on one of the text fields in txfResults.
     // Hint: Create small helper methods to be used in the mouse click method.
     // TODO
     public void chooseFieldAction(Event event) {
-
         TextField txfresultater = ((TextField) event.getSource());
-        txfresultater.setDisable(true);
 
+        txfresultater.setDisable(true);
+        yatzy.resetThrowCount();
+        lblRolled.setText("rolled: " + yatzy.getThrowCount());
+        for (int i = 0; i < chbHolds.length; i++) {
+            chbHolds[i].setSelected(false);
+            txfValues[i].clear();
+            chbHolds[i].setDisable(true);
+        }
+        for (int i = 0; i < 15; i++) {
+            if (!txfResults[i].isDisabled()) {
+                txfResults[i].clear();
+            }
+        }
 
     }
-
-
 }
+
 
 
