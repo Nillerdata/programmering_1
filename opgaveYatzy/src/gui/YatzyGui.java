@@ -13,11 +13,6 @@ import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 import model.YatzyDice;
 
-import java.lang.reflect.Method;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Objects;
-
 
 public class YatzyGui extends Application {
 
@@ -62,7 +57,7 @@ public class YatzyGui extends Application {
         for (int i = 0; i < holds.length; i++) {
             holds[i] = false;
         }
-        GridPane dicePane = new GridPane();
+        GridPane dicePane = new GridPane();//Øverste gridpane
         pane.add(dicePane, 0, 0);
         dicePane.setGridLinesVisible(false);
         dicePane.setPadding(new Insets(10));
@@ -100,8 +95,7 @@ public class YatzyGui extends Application {
 
         btnRoll.setOnAction(event -> rollAction());
         // ---------------------------------------------------------------------
-
-        GridPane scorePane = new GridPane();
+        GridPane scorePane = new GridPane();//nederste gridpane
         pane.add(scorePane, 0, 1);
         scorePane.setGridLinesVisible(false);
         scorePane.setPadding(new Insets(10));
@@ -140,6 +134,7 @@ public class YatzyGui extends Application {
 
         Label lblBonus = new Label("Bonus");
         scorePane.add(lblBonus, 5, 5);
+
 
         txfBonus = new TextField("0");
         scorePane.add(txfBonus, 6, 5);
@@ -197,28 +192,28 @@ public class YatzyGui extends Application {
                 txfResults[i].setText(result[i] + "");
 
             } else if (i < 6) {
-                int int1 = Integer.parseInt(txfResults[i].getText());
-                int int2 = Integer.parseInt(txfSumSame.getText());
+                int newSumSame = Integer.parseInt(txfResults[i].getText());
+                int oldSumSame = Integer.parseInt(txfSumSame.getText());
 
-                txfSumSame.setText((int1 + int2) + "");
+                txfSumSame.setText((newSumSame + oldSumSame) + "");
             } else {
-                int int1 = Integer.parseInt(txfResults[i].getText());
-                int int2 = Integer.parseInt(txfSumOther.getText());
+                int newSumOther = Integer.parseInt(txfResults[i].getText());
+                int oldSumOther = Integer.parseInt(txfSumOther.getText());
 
-                txfSumOther.setText((int1 + int2) + "");
+                txfSumOther.setText((newSumOther + oldSumOther) + "");
             }
         }
         if (Integer.parseInt(txfSumSame.getText()) >= 63) {
             txfBonus.setText("50");
         }
-        int int1 = Integer.parseInt(txfSumSame.getText());
-        int int2 = Integer.parseInt(txfSumOther.getText());
-        int int3 = Integer.parseInt(txfBonus.getText());
+        int sumSame = Integer.parseInt(txfSumSame.getText());
+        int sumOther = Integer.parseInt(txfSumOther.getText());
+        int bonus = Integer.parseInt(txfBonus.getText());
 
         if (txfBonus.getText().equals("0")) {
-            txfTotal.setText((int1 + int2 + int3) + "");
+            txfTotal.setText((sumSame + sumOther + bonus) + "");
         } else {
-            txfTotal.setText((int1 + int2) + "");
+            txfTotal.setText((sumSame + sumOther) + "");
         }
 
     }
@@ -229,6 +224,7 @@ public class YatzyGui extends Application {
     // TODO
     public void chooseFieldAction(Event event) {
         TextField txfresultater = ((TextField) event.getSource());
+
 
         txfresultater.setDisable(true);
         yatzy.resetThrowCount();
@@ -242,6 +238,7 @@ public class YatzyGui extends Application {
             if (!txfResults[i].isDisabled()) {
                 txfResults[i].clear();
             }
+            btnRoll.setDisable(false);//sørger for at uanset hvad, kan du slå igen
         }
 
     }
