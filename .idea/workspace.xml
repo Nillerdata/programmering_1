@@ -13,6 +13,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -50,7 +51,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.AdditionQuiz.executor": "Run",
-    "Application.App.executor": "Run",
+    "Application.App.executor": "Debug",
     "Application.AppNielsG.executor": "Run",
     "Application.ArrayApp.executor": "Run",
     "Application.ArrayApp2.executor": "Run",
@@ -69,11 +70,13 @@
     "Application.Pigs.executor": "Run",
     "Application.RentalApp.executor": "Run",
     "Application.S53_1_9.executor": "Run",
+    "Application.SantaClausApp.executor": "Run",
     "Application.SwimmerApp.executor": "Run",
     "Application.TeamApp.executor": "Run",
     "Application.Timetabel.executor": "Run",
     "Application.YatzyApp.executor": "Run",
     "Application.aflevering_opg_1.executor": "Run",
+    "Application.app.executor": "Run",
     "Application.array.executor": "Run",
     "Application.arrayListApp.executor": "Run",
     "Application.arraylist_testing.executor": "Run",
@@ -124,6 +127,7 @@
     "Application.opg_04.App.executor": "Run",
     "Application.opg_05.App.executor": "Run",
     "Application.opg_1.App.executor": "Run",
+    "Application.opg_1.RentalApp.executor": "Run",
     "Application.opg_1.executor": "Run",
     "Application.opg_4.executor": "Run",
     "Application.opg_5.executor": "Run",
@@ -167,7 +171,7 @@
     "Repository.Attach.JavaDocs": "false",
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/niels/IdeaProjects/programming 1/lek_23part3/src",
+    "last_opened_file_path": "C:/Users/niels/IdeaProjects/programming 1/lek_24/src",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -177,11 +181,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\niels\IdeaProjects\programming 1\lek_24\src" />
+      <recent name="C:\Users\niels\IdeaProjects\programming 1\lek_24\src\opg_3dobbeltSammenhæng" />
+      <recent name="C:\Users\niels\IdeaProjects\programming 1\lek_24\src\opg_1" />
       <recent name="C:\Users\niels\IdeaProjects\programming 1\lek_23part3\src" />
       <recent name="C:\Users\niels\IdeaProjects\programming 1\lek_23part2\src" />
-      <recent name="C:\Users\niels\IdeaProjects\programming 1\lek_23\src\opg2" />
-      <recent name="C:\Users\niels\IdeaProjects\programming 1\lek_23\src\swimmer" />
-      <recent name="C:\Users\niels\IdeaProjects\programming 1\opgaveYatzy\src\model" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\niels\IdeaProjects\programming 1\lek_23\src" />
@@ -194,17 +198,24 @@
       <recent name="opgave_1" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.model.SwimmerApp (1)">
-    <configuration name="RentalApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="opg3.RentalApp" />
-      <module name="lek_23" />
+  <component name="RunManager" selected="Application.app">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="opg_4enum.App" />
+      <module name="lek_24" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SwimmerApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="swimmer.model.SwimmerApp" />
-      <module name="lek_23" />
+    <configuration name="SantaClausApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="opg_2GiftAndPackage.SantaClausApp" />
+      <module name="lek_24" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="app" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="opg_5.app" />
+      <module name="lek_24" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -216,27 +227,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="model.SwimmerApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="model.SwimmerApp" />
-      <module name="lek_23part2" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="opgave_1.App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="opgave_1.App" />
-      <module name="lek_20" />
+    <configuration name="opg_1.RentalApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="opg_1.RentalApp" />
+      <module name="lek_24" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.app" />
+        <item itemvalue="Application.App" />
+        <item itemvalue="Application.SantaClausApp" />
+        <item itemvalue="Application.opg_1.RentalApp" />
         <item itemvalue="Application.model.SwimmerApp (1)" />
-        <item itemvalue="Application.RentalApp" />
-        <item itemvalue="Application.model.SwimmerApp" />
-        <item itemvalue="Application.SwimmerApp" />
-        <item itemvalue="Application.opgave_1.App" />
       </list>
     </recent_temporary>
   </component>
