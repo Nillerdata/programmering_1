@@ -7,15 +7,16 @@ public class secondsAndMinutesChallenge {
     }
 
     public static String getDurationString(int seconds) {
+        int minutes = seconds/60;
         String result = "";
         if (seconds >= 0) {
-            result = getDurationString(0, seconds);
-        }
+            result = getDurationString(seconds / 60, seconds % 60);
+        }else System.out.println("indtast valid int");
         return result;
     }
 
     public static String getDurationString(int minutes, int seconds) {
-        String sendBack = "";
+        String sendBack;
         if (minutes >= 0 && seconds >= 0 && seconds <= 59) {
             int hours = minutes / 60;
             if (hours > 0) {
@@ -26,3 +27,10 @@ public class secondsAndMinutesChallenge {
         return sendBack;
     }
 }
+/*
+int minutes  = seconds /60;
+int hours = minutes / 60;
+int remainingMinutes = minutes % 60;
+int remainingSeconds = seconds % 60;
+return hours + " h " + remainingMinutes + " m " + remainingSeconds + " s "
+*/
