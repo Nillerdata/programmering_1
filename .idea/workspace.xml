@@ -51,7 +51,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.AdditionQuiz.executor": "Run",
-    "Application.App.executor": "Debug",
+    "Application.App.executor": "Run",
     "Application.AppNielsG.executor": "Run",
     "Application.ArrayApp.executor": "Run",
     "Application.ArrayApp2.executor": "Run",
@@ -104,6 +104,7 @@
     "Application.exercise_06.App.executor": "Run",
     "Application.exercise_08.App.executor": "Run",
     "Application.fanApp.executor": "Run",
+    "Application.feetAndInchesToCM.executor": "Run",
     "Application.fillName.App.executor": "Run",
     "Application.fizzbuzz.executor": "Run",
     "Application.guidemos.guidemo_1.App.executor": "Run",
@@ -143,6 +144,7 @@
     "Application.opgaver_3.App.executor": "Run",
     "Application.opgaver_4.App.executor": "Run",
     "Application.opgaver_5.App.executor": "Run",
+    "Application.overloadChallenge1.executor": "Run",
     "Application.personApp.executor": "Run",
     "Application.positiveNegativeOrZero.executor": "Run",
     "Application.primitive_type_challenge.executor": "Run",
@@ -157,6 +159,7 @@
     "Application.s_135_3_17.executor": "Run",
     "Application.s_258_6_4.executor": "Run",
     "Application.scanner_decimal.executor": "Run",
+    "Application.secondsAndMinutesChallenge.executor": "Run",
     "Application.shapes.example.App.executor": "Run",
     "Application.stockOpgApp.executor": "Run",
     "Application.stopwatchApp.executor": "Run",
@@ -198,7 +201,7 @@
       <recent name="opgave_1" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.app">
+  <component name="RunManager" selected="Application.secondsAndMinutesChallenge">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="opg_4enum.App" />
       <module name="lek_24" />
@@ -220,27 +223,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="model.SwimmerApp (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="model.SwimmerApp" />
-      <module name="lek_23part3" />
+    <configuration name="feetAndInchesToCM" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="overloadChallenge.feetAndInchesToCM" />
+      <module name="course" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="opg_1.RentalApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="opg_1.RentalApp" />
-      <module name="lek_24" />
+    <configuration name="secondsAndMinutesChallenge" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="overloadChallenge.secondsAndMinutesChallenge" />
+      <module name="course" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.app" />
+        <item itemvalue="Application.secondsAndMinutesChallenge" />
+        <item itemvalue="Application.feetAndInchesToCM" />
         <item itemvalue="Application.App" />
+        <item itemvalue="Application.app" />
         <item itemvalue="Application.SantaClausApp" />
-        <item itemvalue="Application.opg_1.RentalApp" />
-        <item itemvalue="Application.model.SwimmerApp (1)" />
       </list>
     </recent_temporary>
   </component>

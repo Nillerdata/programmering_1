@@ -55,19 +55,19 @@ public class Kollegie {
     }//5.3
 
     public double gennenmsnitligAntalDage() {
-        double sum = 0;
-        double bob = 0;
+        long antalLejeAftale = 0;
+        long samletAntalDage = 0;
         for (Bolig b : boligs) {
 
             for (Lejeaftale l : b.getLejeaftales()) {
                 if (l.getTilDato() != null) {
-                    bob += ChronoUnit.DAYS.between(l.getFraDato(), l.getTilDato());
-                    sum++;
+                    samletAntalDage += ChronoUnit.DAYS.between(l.getFraDato(), l.getTilDato());
+                    antalLejeAftale++;
                 }
             }
 
         }
-        return bob/sum;
+        return (double) (samletAntalDage / antalLejeAftale);
     }
 
 }

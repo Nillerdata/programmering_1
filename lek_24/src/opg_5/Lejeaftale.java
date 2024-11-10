@@ -6,7 +6,7 @@ import java.util.ArrayList;
 public class Lejeaftale {
     private LocalDate fraDato;
     private LocalDate tilDato;
-    private final ArrayList<Lejer>lejers;
+    private final ArrayList<Lejer> lejers;
 
     public Lejeaftale(LocalDate fraDato) {
         this.fraDato = fraDato;
@@ -32,16 +32,17 @@ public class Lejeaftale {
 
     //linkattributter---------
 
-    public void addLejere(Lejer lejer){
-        if(!lejers.contains(lejer)&&lejers.size() != 2){
+    public void addLejere(Lejer lejer) {
+        if (!lejers.contains(lejer) && lejers.size() >= 2) {
             lejers.add(lejer);
         }
     }
-    public void removeLejere(Lejer lejer){
-        if(lejers.contains(lejer)){
+
+    public void removeLejere(Lejer lejer) {
+        if (lejers.contains(lejer)) {
             lejers.remove(lejer);
         }
     }
-    //linkattributter til bolig
+
 
 }

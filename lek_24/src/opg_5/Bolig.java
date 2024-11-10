@@ -44,6 +44,7 @@ public class Bolig {
     public void setPrisPrMåned(int prisPrMåned) {
         this.prisPrMåned = prisPrMåned;
     }
+
     //linkattributter------------
     public ArrayList<Lejeaftale>getLejeaftales(){
         return new ArrayList<>(lejeaftales);

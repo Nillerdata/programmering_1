@@ -17,7 +17,7 @@ public class App {
         Hund h1 = new Hund("Molly",false,6000,Race.TERRIER);
         Hund h2 = new Hund("Prang",true,2000,Race.TERRIER);
         Hund h3 = new Hund("Tommy",true,3000,Race.PUDDEL);
-        Hund h4 = new Hund("asøoidfjgf",false,4000,Race.BOKSER);
+        Hund h4 = new Hund("Molly 2.0",false,4000,Race.BOKSER);
         Hund h5 = new Hund("Queen",false,1000,Race.BOKSER);
         hunde.add(h1);
         hunde.add(h2);
