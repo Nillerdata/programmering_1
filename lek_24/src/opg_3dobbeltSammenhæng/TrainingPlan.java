@@ -46,11 +46,13 @@ public class TrainingPlan {
 	public void addSwimmer(Swimmer swimmer){
 		if(!swimmers.contains(swimmer)){
 			swimmers.add(swimmer);
+			swimmer.addTrainingPlan(this);
 		}
 	}
 	public void removeSwimmer(Swimmer swimmer){
 		if(swimmers.contains(swimmer)){
 			swimmers.remove(swimmer);
+			swimmer.setTrainingPlan(null);
 		}
 	}
 }

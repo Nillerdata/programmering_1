@@ -22,7 +22,7 @@ public class Swimmer {
         this.yearGroup = yearGroup;
         this.lapTimes = lapTimes;
         this.club = club;
-        this.trainingPlan = trainingPlan;
+
         trainingPlans = new ArrayList<>();
     }
 
@@ -49,8 +49,6 @@ public class Swimmer {
 
     /**
      * Register the club of the swimmer
-     *
-     * @param club
      */
     public void setClub(String club) {
         this.club = club;
@@ -83,11 +81,16 @@ public class Swimmer {
     //linkattributter--------------------------
 
     public void setTrainingPlan(TrainingPlan trainingPlan) {
-        this.trainingPlan = trainingPlan;
         if (this.trainingPlan != trainingPlan) {
+            TrainingPlan old = this.trainingPlan;
+            if (old != null) {
+                old.removeSwimmer(this);
+            }
             this.trainingPlan = trainingPlan;
+            if (trainingPlan != null) {
+                trainingPlan.addSwimmer(this);
+            }
         }
-
     }
 
     public TrainingPlan getTrainingPlan() {
@@ -97,12 +100,14 @@ public class Swimmer {
     public void addTrainingPlan(TrainingPlan trainingPlan) {
         if (!trainingPlans.contains(trainingPlan)) {
             trainingPlans.add(trainingPlan);
+            trainingPlan.addSwimmer(this);
         }
 
     }
     public void removeTrainingPlan(TrainingPlan trainingPlan){
         if(trainingPlans.contains(trainingPlan)){
             trainingPlans.remove(trainingPlan);
+            trainingPlan.removeSwimmer(this);
         }
     }
 }

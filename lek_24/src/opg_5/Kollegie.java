@@ -35,6 +35,7 @@ public class Kollegie {
     public void addBolig(Bolig bolig) {
         if (!boligs.contains(bolig)) {
             boligs.add(bolig);
+            bolig.setKollegie(this);
         }
     }
 

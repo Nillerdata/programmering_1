@@ -30,7 +30,11 @@ public class Lejeaftale {
         this.tilDato = tilDato;
     }
 
-    //linkattributter---------
+    //linkattributter_________________
+    public ArrayList<Lejer>getLejers(){
+        return new ArrayList<>(lejers);
+    }
+
 
     public void addLejere(Lejer lejer) {
         if (!lejers.contains(lejer) && lejers.size() >= 2) {

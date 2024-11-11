@@ -35,7 +35,7 @@ public class Person {
     }
     //linkattributter---------
     public ArrayList<Gift>getGifts(){
-        return new ArrayList<>();
+        return new ArrayList<>(gifts);
     }
     public void addGift(Gift gift){
         if(!gifts.contains(gift)){

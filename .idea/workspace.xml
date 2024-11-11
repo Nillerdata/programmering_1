@@ -108,6 +108,8 @@
     "Application.fillName.App.executor": "Run",
     "Application.fizzbuzz.executor": "Run",
     "Application.guidemos.guidemo_1.App.executor": "Run",
+    "Application.guifx.App (1).executor": "Run",
+    "Application.guifx.App.executor": "Run",
     "Application.kap2_21_22.executor": "Run",
     "Application.kap2_2_2.executor": "Run",
     "Application.mainChallenge.executor": "Run",
@@ -174,7 +176,7 @@
     "Repository.Attach.JavaDocs": "false",
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/niels/IdeaProjects/programming 1/lek_24/src",
+    "last_opened_file_path": "C:/Users/niels/IdeaProjects/programming 1/lek_25opg2/src",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -184,11 +186,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\niels\IdeaProjects\programming 1\lek_25opg2\src" />
+      <recent name="C:\Users\niels\IdeaProjects\programming 1\lek_25\src" />
       <recent name="C:\Users\niels\IdeaProjects\programming 1\lek_24\src" />
       <recent name="C:\Users\niels\IdeaProjects\programming 1\lek_24\src\opg_3dobbeltSammenhæng" />
       <recent name="C:\Users\niels\IdeaProjects\programming 1\lek_24\src\opg_1" />
-      <recent name="C:\Users\niels\IdeaProjects\programming 1\lek_23part3\src" />
-      <recent name="C:\Users\niels\IdeaProjects\programming 1\lek_23part2\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\niels\IdeaProjects\programming 1\lek_23\src" />
@@ -201,23 +203,9 @@
       <recent name="opgave_1" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.secondsAndMinutesChallenge">
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="opg_4enum.App" />
-      <module name="lek_24" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SantaClausApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="opg_2GiftAndPackage.SantaClausApp" />
-      <module name="lek_24" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="app" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="opg_5.app" />
+  <component name="RunManager" selected="Application.guifx.App (1)">
+    <configuration name="RentalApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="opg_1.RentalApp" />
       <module name="lek_24" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -226,6 +214,20 @@
     <configuration name="feetAndInchesToCM" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="overloadChallenge.feetAndInchesToCM" />
       <module name="course" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="guifx.App (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="guifx.App" />
+      <module name="lek_25opg2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="guifx.App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="guifx.App" />
+      <module name="lek_25" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -239,11 +241,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.guifx.App (1)" />
+        <item itemvalue="Application.guifx.App" />
+        <item itemvalue="Application.RentalApp" />
         <item itemvalue="Application.secondsAndMinutesChallenge" />
         <item itemvalue="Application.feetAndInchesToCM" />
-        <item itemvalue="Application.App" />
-        <item itemvalue="Application.app" />
-        <item itemvalue="Application.SantaClausApp" />
       </list>
     </recent_temporary>
   </component>

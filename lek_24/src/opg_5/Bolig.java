@@ -49,16 +49,19 @@ public class Bolig {
     public ArrayList<Lejeaftale>getLejeaftales(){
         return new ArrayList<>(lejeaftales);
     }
+
     public Lejeaftale createLejeaftale(LocalDate fraDato){
         Lejeaftale lejeaftale = new Lejeaftale(fraDato);
         lejeaftales.add(lejeaftale);
         return lejeaftale;
     }
+
     public void removeLejeaftales(Lejeaftale lejeaftale){
         if(lejeaftales.contains(lejeaftale)){
             lejeaftales.remove(lejeaftale);
         }
     }
+
     public void setKollegie(Kollegie kollegie){
         if(this.kollegie != kollegie){
             Kollegie gammelKollegie =this.kollegie;

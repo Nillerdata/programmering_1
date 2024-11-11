@@ -1,11 +1,12 @@
 package opg_4enum;
 
 public class Hund {
+    //private attributter
     private String navn;
     private boolean stamtavle;
     private int pris;
     private Race race;
-
+    //constructor
     public Hund(String navn, boolean stamtavle, int pris, Race race) {
         this.navn = navn;
         this.stamtavle = stamtavle;
