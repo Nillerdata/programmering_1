@@ -113,14 +113,21 @@ public class Controller {
     // -------------------------------------------------------------------------
 
     /**
+     * @param name,company
      * create new customer
      */
     public static Customer createCustomer(String name, Company company) {
         Customer customer = new Customer(name);
-
         company.addCustomer(customer);
         return customer;
+
     }
+
+    /**
+     * @param name
+     * overwrite create new customer
+     * @return customer
+     */
     public static Customer createCustomer(String name) {
         Customer customer = new Customer(name);
         return customer;
