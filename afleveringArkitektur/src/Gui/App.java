@@ -1,6 +1,7 @@
 package Gui;
 
 import controller.Controller;
+import javafx.application.Application;
 import model.PladsType;
 
 import java.time.LocalDate;
@@ -8,7 +9,8 @@ import java.time.LocalDate;
 public class App {
 
     public static void main(String[] args) {
-
+        initStorage();
+        Application.launch(GuiFX.class);
     }
 
     public static void initStorage() {
@@ -17,11 +19,13 @@ public class App {
         Controller.createForestilling("Evita", LocalDate.of(2023, 8, 10),
                 LocalDate.of(2023, 8, 20));
 
+
         Controller.createForestilling("Lykke Per", LocalDate.of(2023, 9, 1),
                 LocalDate.of(2023, 9, 10));
 
         Controller.createForestilling("Chess", LocalDate.of(2023, 8, 21),
                 LocalDate.of(2023, 8, 30));
+
         //____________________________________
         //Kunder
         Controller.createKunde("Anders Hansen", "11223344");
@@ -56,7 +60,5 @@ public class App {
                 } else Controller.createPlads(i, j, 400, PladsType.STANDARD);
             }
         }
-
-
     }
 }

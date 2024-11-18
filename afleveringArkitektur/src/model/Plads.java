@@ -28,4 +28,7 @@ public class Plads {
     public PladsType getPladsType() {
         return pladsType;
     }
+    public String toString(){
+        return "rk: " + række + " " + "nr: " + nr + "(kr: " + pris + " " + pladsType + ")";
+    }
 }

@@ -34,14 +34,14 @@ public class Storage {
     //get
 
     public static ArrayList<Forestilling> getForestillings() {
-        return forestillings;
+        return new ArrayList<>(forestillings) ;
     }
 
     public static ArrayList<Kunde> getKundes() {
-        return kundes;
+        return new ArrayList<>(kundes) ;
     }
 
     public static ArrayList<Plads> getPladser() {
-        return pladser;
+        return new ArrayList<>(pladser);
     }
 }

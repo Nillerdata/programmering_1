@@ -61,6 +61,7 @@
     &quot;Application.EmployeeApp.executor&quot;: &quot;Run&quot;,
     &quot;Application.HelloWorld.executor&quot;: &quot;Run&quot;,
     &quot;Application.LoekkerOpgaver.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
     &quot;Application.MainChallenge.executor&quot;: &quot;Run&quot;,
     &quot;Application.MethodsArrayList.executor&quot;: &quot;Run&quot;,
     &quot;Application.Opg6_tegnnavn.executor&quot;: &quot;Run&quot;,
@@ -203,17 +204,24 @@
       <recent name="opgave_1" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.guifx.App (1)">
-    <configuration name="RentalApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="opg_1.RentalApp" />
-      <module name="lek_24" />
+  <component name="RunManager" selected="Application.App">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Gui.App" />
+      <module name="afleveringArkitektur" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="feetAndInchesToCM" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="overloadChallenge.feetAndInchesToCM" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="course.Main" />
       <module name="course" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RentalApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="opg_1.RentalApp" />
+      <module name="lek_24" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -232,20 +240,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="secondsAndMinutesChallenge" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="overloadChallenge.secondsAndMinutesChallenge" />
-      <module name="course" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.App" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.guifx.App (1)" />
         <item itemvalue="Application.guifx.App" />
         <item itemvalue="Application.RentalApp" />
-        <item itemvalue="Application.secondsAndMinutesChallenge" />
-        <item itemvalue="Application.feetAndInchesToCM" />
       </list>
     </recent_temporary>
   </component>
