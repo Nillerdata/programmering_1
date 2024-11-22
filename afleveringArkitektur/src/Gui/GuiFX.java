@@ -72,13 +72,16 @@ public class GuiFX extends Application {
 
 
         //indsætte listview__________________________
+
         pane.add(lvwForestilling, 0, 1, 2, 1);
         pane.add(lvwKunder, 2, 1, 2, 1);
         pane.add(lvwplads, 4, 1, 2, 1);
 
 
         //kundeLabels_________________________________
+
         //TODO indsætte labels
+
         String[] labelNavne = {"Navn", "Start dato", "Slut dato", "Kunde navn", "Kunde mobil"};
 
         Label lblForestillinger = new Label("Forestillinger");
@@ -97,7 +100,9 @@ public class GuiFX extends Application {
         }
         Label lblPladser = new Label("Pladser");
         pane.add(lblPladser, 4, 0);
+
         //indsætte textfield
+
         txfName = new TextField();
         txfStartDato = new TextField();
         txfSlutDato = new TextField();
@@ -113,6 +118,7 @@ public class GuiFX extends Application {
         pane.add(txfDato, 4, 2);
 
         //buttons____________________________
+
         btnForestilling = new Button("opret forestilling");
         btnKunde = new Button("opret Kunde");
         btnOpretBestilling = new Button("Opret Bestilling");
@@ -127,6 +133,7 @@ public class GuiFX extends Application {
 
     //TODO buttonactions--------------------------------
     //create forestillings action
+
     public void createForestillingAction() {
         String navn = txfName.getText().trim();
         LocalDate startDato = LocalDate.parse(txfStartDato.getText().trim());

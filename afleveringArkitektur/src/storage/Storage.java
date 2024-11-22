@@ -10,6 +10,7 @@ import java.util.ArrayList;
 public class Storage {
 
     //arraylister
+
     private static ArrayList<Forestilling>forestillings = new ArrayList<>();
     private static ArrayList<Plads>pladser = new ArrayList<>();
     private static ArrayList<Kunde>kundes = new ArrayList<>();
