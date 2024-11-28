@@ -59,7 +59,9 @@
     "Application.ChildApp.executor": "Run",
     "Application.Craps.executor": "Run",
     "Application.EmployeeApp.executor": "Run",
+    "Application.ExceptionApp.executor": "Run",
     "Application.HelloWorld.executor": "Run",
+    "Application.IsCatPlaying.executor": "Run",
     "Application.LoekkerOpgaver.executor": "Run",
     "Application.Main.executor": "Run",
     "Application.MainChallenge.executor": "Run",
@@ -69,10 +71,12 @@
     "Application.Opg8_HelloJuniorCoder.executor": "Run",
     "Application.Opg_4.executor": "Run",
     "Application.Pigs.executor": "Run",
+    "Application.PrintWriterTalResources.executor": "Run",
     "Application.RentalApp.executor": "Run",
     "Application.S53_1_9.executor": "Run",
     "Application.SantaClausApp.executor": "Run",
     "Application.SoegningApp.executor": "Run",
+    "Application.SortTester.executor": "Run",
     "Application.SpillerApp.executor": "Run",
     "Application.SwimmerApp.executor": "Run",
     "Application.TeamApp.executor": "Run",
@@ -141,12 +145,19 @@
     "Application.opg_6.executor": "Run",
     "Application.opg_6_2_5.executor": "Run",
     "Application.opg_6_2_6.executor": "Run",
+    "Application.opg_7.executor": "Run",
     "Application.opg_7_6.executor": "Run",
+    "Application.opg_8.executor": "Run",
     "Application.opg_hus.App.executor": "Run",
     "Application.opgave_1.App.executor": "Run",
+    "Application.opgave_1.executor": "Run",
+    "Application.opgave_2.executor": "Run",
+    "Application.opgave_3.executor": "Run",
+    "Application.opgave_4.executor": "Run",
     "Application.opgave_5.executor": "Run",
     "Application.opgave_6.executor": "Run",
     "Application.opgave_7.executor": "Run",
+    "Application.opgaver.ExceptionApp.executor": "Run",
     "Application.opgaver.Opg6_tegnnavn.executor": "Run",
     "Application.opgaver_2.App.executor": "Run",
     "Application.opgaver_3.App.executor": "Run",
@@ -183,7 +194,7 @@
     "Repository.Attach.JavaDocs": "false",
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/niels/IdeaProjects/programming 1/lek_28/src/søgning_opgaver",
+    "last_opened_file_path": "C:/Users/niels/IdeaProjects/programming 1/lek_30_exceptionsOgTekstfiler/src",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -193,11 +204,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\niels\IdeaProjects\programming 1\lek_30_exceptionsOgTekstfiler\src" />
+      <recent name="C:\Users\niels\IdeaProjects\programming 1\lek_29\src" />
       <recent name="C:\Users\niels\IdeaProjects\programming 1\lek_28\src\søgning_opgaver" />
       <recent name="C:\Users\niels\IdeaProjects\programming 1\lek_25opg2\src" />
       <recent name="C:\Users\niels\IdeaProjects\programming 1\lek_25\src" />
-      <recent name="C:\Users\niels\IdeaProjects\programming 1\lek_24\src" />
-      <recent name="C:\Users\niels\IdeaProjects\programming 1\lek_24\src\opg_3dobbeltSammenhæng" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\niels\IdeaProjects\programming 1\lek_23\src" />
@@ -210,49 +221,49 @@
       <recent name="opgave_1" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.opgave_7">
-    <configuration name="SoegningApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="søgning_opgaver.soegningelevopgaver.SoegningApp" />
-      <module name="lek_28" />
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="IsCatPlaying" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="course.IsCatPlaying" />
+      <module name="course" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpillerApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="søgning_opgaver.soegningelevopgaver.SpillerApp" />
-      <module name="lek_28" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Switch.Main" />
+      <module name="course" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="opgave_5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="øvelse.opgave_5" />
-      <module name="lek_28" />
+    <configuration name="PrintWriterTalResources" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="filer.PrintWriterTalResources" />
+      <module name="lek_30_exceptionsOgTekstfiler" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="opgave_6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="øvelse.opgave_6" />
-      <module name="lek_28" />
+    <configuration name="opg_7" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="opgaver.opg_7" />
+      <module name="lek_30_exceptionsOgTekstfiler" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="opgave_7" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="øvelse.opgave_7" />
-      <module name="lek_28" />
+    <configuration name="opg_8" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="opgaver.opg_8" />
+      <module name="lek_30_exceptionsOgTekstfiler" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.opgave_7" />
-        <item itemvalue="Application.opgave_6" />
-        <item itemvalue="Application.opgave_5" />
-        <item itemvalue="Application.SpillerApp" />
-        <item itemvalue="Application.SoegningApp" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.IsCatPlaying" />
+        <item itemvalue="Application.opg_8" />
+        <item itemvalue="Application.PrintWriterTalResources" />
+        <item itemvalue="Application.opg_7" />
       </list>
     </recent_temporary>
   </component>
