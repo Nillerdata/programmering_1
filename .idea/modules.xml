@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/AfleveringKAS/AfleveringKAS.iml" filepath="$PROJECT_DIR$/AfleveringKAS/AfleveringKAS.iml" />
       <module fileurl="file://$PROJECT_DIR$/afleveringArkitektur/afleveringArkitektur.iml" filepath="$PROJECT_DIR$/afleveringArkitektur/afleveringArkitektur.iml" />
       <module fileurl="file://$PROJECT_DIR$/aflevering_2/aflevering_2.iml" filepath="$PROJECT_DIR$/aflevering_2/aflevering_2.iml" />
       <module fileurl="file://$PROJECT_DIR$/aflevering_terning/aflevering_terning.iml" filepath="$PROJECT_DIR$/aflevering_terning/aflevering_terning.iml" />
