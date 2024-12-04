@@ -1,6 +1,5 @@
 package model;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class Deltager {
@@ -10,11 +9,12 @@ public class Deltager {
     private String firmaNavn;
     private String tlfnr;
     private String firmaTlf;
-    //------------------------
+    //-------------------------------------------------------------------
     //TODO linkattributter
     Tilmelding tilmelding;
 
     private final ArrayList<Tilmelding>Tilmeldinger = new ArrayList<>();
+
 
     //constructors
     //med firma
@@ -105,5 +105,23 @@ public class Deltager {
 
     public ArrayList<Tilmelding> getTilmeldinger() {
         return new ArrayList<>(Tilmeldinger);
+    }
+
+    //------------------------------------------------
+    //tostring metode
+
+
+    @Override
+    public String toString() {
+        return "Deltager{" +
+                "navn='" + navn + '\'' +
+                ", adresse='" + adresse + '\'' +
+                ", byOgLand='" + byOgLand + '\'' +
+                ", firmaNavn='" + firmaNavn + '\'' +
+                ", tlfnr='" + tlfnr + '\'' +
+                ", firmaTlf='" + firmaTlf + '\'' +
+                ", tilmelding=" + tilmelding +
+                ", Tilmeldinger=" + Tilmeldinger +
+                '}';
     }
 }

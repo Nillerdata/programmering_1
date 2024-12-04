@@ -27,4 +27,17 @@ public class Ledsager {
     public Tilmelding getTilmelding() {
         return tilmelding;
     }
+
+    //--------------------------------------------
+    //tostring metode
+
+
+    @Override
+    public String toString() {
+        return "Ledsager{" +
+                "navn='" + navn + '\'' +
+                ", tlf='" + tlf + '\'' +
+                ", tilmelding=" + tilmelding +
+                '}';
+    }
 }

@@ -10,19 +10,25 @@ public class Tilmelding {
     private boolean foredragsholder;
     //---------------------------------------------
     //TODO linkattributter
-    private final ArrayList<Ekstra>ekstras = new ArrayList<>();
-    private final ArrayList<Udflugt>udflugter = new ArrayList<>();
-    private final ArrayList<Hotel>Hoteller = new ArrayList<>();
+    private final ArrayList<Ekstra> ekstras = new ArrayList<>();
+    private final ArrayList<Udflugt> udflugter = new ArrayList<>();
+    private final ArrayList<Hotel> Hoteller = new ArrayList<>();
     private Hotel hotel;
     private Ledsager ledsager;
     private Deltager deltager;
+    private Konference konference;
+    private Tilmelding tilmelding;
+    private Udflugt udflugt;
+
     //---------------------------------------------
     //constructor
-    Tilmelding(LocalDate ankomstDato, LocalDate afrejseDato,boolean foredragsholder,Deltager deltager){
+    Tilmelding(LocalDate ankomstDato, LocalDate afrejseDato, boolean foredragsholder, Konference konference, Deltager deltager) {
         this.ankomstDato = ankomstDato;
         this.afrejseDato = afrejseDato;
         this.foredragsholder = foredragsholder;
+        this.konference = konference;
         this.setDeltager(deltager);
+
     }
     //---------------------------------------------
     //gettere
@@ -57,47 +63,52 @@ public class Tilmelding {
 
 
     //---------------------------------------------
-
-    public Ledsager createLedsager(String navn, String tlf){
-        Ledsager ledsager1 = new Ledsager(navn,tlf,this);
-        return ledsager1;
+    //Createmetode
+    public Ledsager createLedsager(String navn, String tlf) {
+        ledsager = new Ledsager(navn, tlf, this);
+        return ledsager;
     }
 
 
+    //get metode
+    public Ledsager getLedsager() {
+        return ledsager;
+    }
 
 
     //---------------------------------------------
     //hjælpemetode til constructor
-     void setDeltager(Deltager deltager){
-        if(this.deltager != deltager){
+    void setDeltager(Deltager deltager) {
+        if (this.deltager != deltager) {
             this.deltager = deltager;
-            if(deltager != null){
+            if (deltager != null) {
                 deltager.addTilmelding(this);
             }
         }
     }
 
-    //--------------------------------------
-    //getmetode
-
-    public Ledsager getLedsager() {
-        return ledsager;
+    public Deltager getDeltager() {
+        return deltager;
     }
+    //--------------------------------------
+
+
+
 
     //--------------------------------------
     //tilmelding * -- 0..1 Hotel
 
     //set
-    public void setHotel(Hotel hotel){
-        if(this.hotel != hotel){
-          Hotel gammelHotel = this.hotel;
-          if(gammelHotel != null){
-              gammelHotel.removeTilmelding(this);
-          }
-          this.hotel = hotel;
-          if(hotel != null){
-              hotel.addTilmelding(this);
-          }
+    public void setHotel(Hotel hotel) {
+        if (this.hotel != hotel) {
+            Hotel gammelHotel = this.hotel;
+            if (gammelHotel != null) {
+                gammelHotel.removeTilmelding(this);
+            }
+            this.hotel = hotel;
+            if (hotel != null) {
+                hotel.addTilmelding(this);
+            }
         }
     }
     //get
@@ -108,18 +119,18 @@ public class Tilmelding {
     //---------------------------------------------------
 
 
-
     //tilmelding 0..* --> 0..* Ekstra
 
     //add
-    public void addEkstra(Ekstra ekstra){
-        if(!ekstras.contains(ekstra)){
+    public void addEkstra(Ekstra ekstra) {
+        if (!ekstras.contains(ekstra)) {
             ekstras.add(ekstra);
         }
     }
+
     //remove
-    public void removeEkstra(Ekstra ekstra){
-        if(ekstras.remove(ekstra)){
+    public void removeEkstra(Ekstra ekstra) {
+        if (ekstras.remove(ekstra)) {
             ekstras.remove(ekstra);
         }
     }
@@ -132,15 +143,16 @@ public class Tilmelding {
     //Tilmelding 0..* -- 0..* Udflugt
 
     //add
-    public void addUdflugt(Udflugt udflugt){
-        if(!udflugter.contains(udflugt)){
+    public void addUdflugt(Udflugt udflugt) {
+        if (!udflugter.contains(udflugt)) {
             udflugter.add(udflugt);
             udflugt.addTilmelding(this);
         }
     }
+
     //remove
-    public void removeUdflugt(Udflugt udflugt){
-        if(!udflugter.contains(udflugt)){
+    public void removeUdflugt(Udflugt udflugt) {
+        if (!udflugter.contains(udflugt)) {
             udflugter.add(udflugt);
             udflugt.removeTilmelding(this);
         }
@@ -148,26 +160,63 @@ public class Tilmelding {
     //get
 
     public ArrayList<Udflugt> getUdflugter() {
-        return new ArrayList<>(udflugter) ;
+        return new ArrayList<>(udflugter);
     }
-    public double getSamletPris(Konference konference, Hotel hotel,Udflugt udflugt, Ekstra ekstra,Tilmelding tilmelding){
-        double samletPris = 0.0;
-        long antalDage = ChronoUnit.DAYS.between(tilmelding.ankomstDato, tilmelding.afrejseDato);
 
-        double konferencePris = konference.getKonferenceAfgift() * antalDage;
-        double hotelEnkeltprisPris = hotel.getEnkeltpris() * antalDage;
-        double hotelDobbeltPris = hotel.getDobbeltpris() * antalDage;
-        double ekstraPris = 0.0;
-        double udflugtPris = 0.0;
+    public double getSamletPris() {
+        double samletPris = 0;
+        double hotelEnkeltprisPris = 0;
+        double hotelDobbeltPris = 0;
+        double ekstraPris = 0;
+        double udflugtPris = 0;
+        long antalDage = ChronoUnit.DAYS.between(ankomstDato,afrejseDato)+1;
+        long antalNætter = antalDage-1;
 
-        for (Ekstra ekstra1 : ekstras) {
-            ekstraPris += ekstra1.getPris() * antalDage;
+
+            double konferencePris = konference.getKonferenceAfgift() * antalDage;
+        if(isForedragsholder()||deltager.getFirmaNavn() != null){
+            konferencePris = 0;
+        }
+
+        if (hotel != null) {
+            if(ledsager == null) {
+
+                hotelEnkeltprisPris = hotel.getEnkeltpris() * antalNætter;
+            }else {
+                hotelDobbeltPris = hotel.getDobbeltpris() * antalNætter;
+
+            }
+
+
+            for (Ekstra ekstra1 : ekstras) {
+                ekstraPris += ekstra1.getPris() * antalNætter;
+            }
 
         }
+
         for (Udflugt udflugt1 : udflugter) {
             udflugtPris += udflugt1.getPris();
+
         }
-       return samletPris += konferencePris + hotelEnkeltprisPris + hotelDobbeltPris + ekstraPris +
-                udflugtPris + ekstraPris + udflugtPris;
+
+        return samletPris +=  konferencePris + hotelEnkeltprisPris + hotelDobbeltPris + ekstraPris +
+                udflugtPris;
+
+}
+    @Override
+    public String toString() {
+        return "Tilmelding{" +
+                "ankomstDato=" + ankomstDato +
+                ", afrejseDato=" + afrejseDato +
+                ", foredragsholder=" + foredragsholder +
+                ", ekstras=" + ekstras +
+                ", udflugter=" + udflugter +
+                ", Hoteller=" + Hoteller +
+                ", hotel=" + hotel +
+                ", ledsager=" + ledsager +
+                ", deltager=" + deltager +
+                ", konference=" + konference +
+                ", tilmelding=" + tilmelding +
+                '}';
     }
 }

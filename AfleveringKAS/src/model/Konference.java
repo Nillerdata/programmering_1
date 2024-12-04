@@ -123,16 +123,32 @@ public class Konference {
         return new ArrayList<>(udflugter);
     }
 
+//----------------------------------------------------
 
     //createTilmelding
     public Tilmelding createTilmelding(LocalDate ankomstDato, LocalDate afrejseDato,boolean foredragsholder,Deltager deltager){
-        Tilmelding tilmelding = new Tilmelding(ankomstDato,afrejseDato,foredragsholder,deltager);
+        Tilmelding tilmelding = new Tilmelding(ankomstDato,afrejseDato,foredragsholder,this, deltager);
         tilmeldinger.add(tilmelding);
 
         return tilmelding;
     }
+    //------------------------------------------------
+    //tostringMetode
 
-
-
+    @Override
+    public String toString() {
+        return "Konference{" +
+                "navn='" + navn + '\'' +
+                ", adresse='" + adresse + '\'' +
+                ", startDato=" + startDato +
+                ", slutDato=" + slutDato +
+                ", kortBeskrivelse='" + kortBeskrivelse + '\'' +
+                ", konferenceAfgift=" + konferenceAfgift +
+                ", hoteller=" + hoteller +
+                ", udflugter=" + udflugter +
+                ", tilmeldinger=" + tilmeldinger +
+                ", tilmelding=" + tilmelding +
+                '}';
+    }
     //TODO metoder
 }

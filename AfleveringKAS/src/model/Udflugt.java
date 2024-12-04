@@ -112,5 +112,21 @@ public class Udflugt {
         return new ArrayList<>(tilmeldinger);
     }
 //---------------------------------------------------------
-    //TODO metoder
+    //tostring metode
+
+    @Override
+    public String toString() {
+        return "Udflugt{" +
+                "dato=" + dato +
+                ", startTidspunkt=" + startTidspunkt +
+                ", slutTidspunkt=" + slutTidspunkt +
+                ", navn='" + navn + '\'' +
+                ", mødested='" + mødested + '\'' +
+                ", pris=" + pris +
+                ", konference=" + konference +
+                ", tilmeldinger=" + tilmeldinger +
+                '}';
+    }
+
+
 }

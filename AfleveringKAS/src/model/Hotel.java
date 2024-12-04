@@ -65,7 +65,7 @@ public class Hotel {
     //TODO linkattributter
     //link attributter til ekstra
     public Ekstra createEkstra(double pris, String tilkøb){
-        Ekstra ekstra = new Ekstra(pris,tilkøb);
+        Ekstra ekstra = new Ekstra(pris,tilkøb,this);
         ekstraArrayList.add(ekstra);
         return ekstra;
     }
@@ -124,7 +124,21 @@ public class Hotel {
 
 
     //--------------------------------------------
-    //TODO get metoder
+    //tostring metode
 
 
+    @Override
+    public String toString() {
+        return "Hotel{" +
+                "navn='" + navn + '\'' +
+                ", tlf='" + tlf + '\'' +
+                ", adresse='" + adresse + '\'' +
+                ", enkeltpris=" + enkeltpris +
+                ", dobbeltpris=" + dobbeltpris +
+                ", ekstraArrayList=" + ekstraArrayList +
+                ", tilmeldinger=" + tilmeldinger +
+                ", konferencer=" + konferencer +
+                ", ekstra=" + ekstra +
+                '}';
+    }
 }

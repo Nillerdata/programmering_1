@@ -8,9 +8,10 @@ public class Ekstra {
     private Hotel hotel;
     //------------------------------------
     //constructor
-     Ekstra(double pris, String tilkøb) {
+     Ekstra(double pris, String tilkøb,Hotel hotel) {
         this.pris = pris;
         this.tilkøb = tilkøb;
+        this.hotel = hotel;
     }
 
     public double getPris() {
@@ -34,6 +35,18 @@ public class Ekstra {
     //linkattributter til hotel
     public Hotel getHotel() {
         return hotel;
+    }
+
+    //--------------------------------------------------
+    //tostring metode
+
+    @Override
+    public String toString() {
+        return "Ekstra{" +
+                "pris=" + pris +
+                ", tilkøb='" + tilkøb + '\'' +
+                ", hotel=" + hotel +
+                '}';
     }
 
 
