@@ -92,7 +92,9 @@ public class Tilmelding {
     }
     //--------------------------------------
 
-
+    public Konference getKonference() {
+        return konference;
+    }
 
 
     //--------------------------------------
@@ -203,20 +205,21 @@ public class Tilmelding {
                 udflugtPris;
 
 }
+//---------------------------------------------------------------------------------------------------
+
+
     @Override
     public String toString() {
         return "Tilmelding{" +
                 "ankomstDato=" + ankomstDato +
                 ", afrejseDato=" + afrejseDato +
                 ", foredragsholder=" + foredragsholder +
-                ", ekstras=" + ekstras +
-                ", udflugter=" + udflugter +
-                ", Hoteller=" + Hoteller +
                 ", hotel=" + hotel +
                 ", ledsager=" + ledsager +
                 ", deltager=" + deltager +
                 ", konference=" + konference +
                 ", tilmelding=" + tilmelding +
+                ", udflugt=" + udflugt +
                 '}';
     }
 }

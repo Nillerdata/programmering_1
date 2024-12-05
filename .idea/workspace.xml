@@ -60,6 +60,8 @@
     "Application.Craps.executor": "Run",
     "Application.EmployeeApp.executor": "Run",
     "Application.ExceptionApp.executor": "Run",
+    "Application.Gui.App.executor": "Run",
+    "Application.GuiApp.executor": "Run",
     "Application.HelloWorld.executor": "Run",
     "Application.IsCatPlaying.executor": "Run",
     "Application.LoekkerOpgaver.executor": "Run",
@@ -221,7 +223,7 @@
       <recent name="opgave_1" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.App">
+  <component name="RunManager" selected="Application.GuiApp">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="model.App" />
       <module name="AfleveringKAS" />
@@ -229,9 +231,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IsCatPlaying" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="course.IsCatPlaying" />
-      <module name="course" />
+    <configuration name="GuiApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gui.GuiApp" />
+      <module name="AfleveringKAS" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Gui.App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Gui.App" />
+      <module name="afleveringArkitektur" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -243,27 +252,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PrintWriterTalResources" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="filer.PrintWriterTalResources" />
-      <module name="lek_30_exceptionsOgTekstfiler" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="opg_8" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="opgaver.opg_8" />
-      <module name="lek_30_exceptionsOgTekstfiler" />
+    <configuration name="guifx.App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="guifx.App" />
+      <module name="lek_25" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.GuiApp" />
+        <item itemvalue="Application.guifx.App" />
+        <item itemvalue="Application.Gui.App" />
         <item itemvalue="Application.App" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.IsCatPlaying" />
-        <item itemvalue="Application.opg_8" />
-        <item itemvalue="Application.PrintWriterTalResources" />
       </list>
     </recent_temporary>
   </component>

@@ -16,7 +16,7 @@ public class Konference {
     private final ArrayList<Udflugt>udflugter = new ArrayList<>();
     private final ArrayList<Tilmelding>tilmeldinger = new ArrayList<>();
     private Tilmelding tilmelding;
-    //--------------------------------
+    //---------------------------------------------------------------------
     //Constructor
     public Konference(String navn, String adresse, LocalDate startDato, LocalDate slutDato,
                       String kortBeskrivelse, double konferenceAfgift) {
@@ -53,7 +53,7 @@ public class Konference {
         return konferenceAfgift;
     }
 
-    //---------------------------------------
+    //-----------------------------------------------------------------------------------------------------
     //Settere
 
     public void setNavn(String navn) {
@@ -78,7 +78,7 @@ public class Konference {
     public void setKonferenceAfgift(double konferenceAfgift) {
         this.konferenceAfgift = konferenceAfgift;
     }
-    //--------------------------------------
+    //-------------------------------------------------------------------------------------------------
     //TODO linkattributter
     //konference aggregering 0..* -- 0.. * Hotel
     //add
@@ -100,7 +100,7 @@ public class Konference {
         return new ArrayList<>(hoteller);
     }
 
-    //-----------------------------------------
+    //-------------------------------------------------------------------------------
     //konference 1 komp -- 0..* udflugt
 
     //create
@@ -123,7 +123,7 @@ public class Konference {
         return new ArrayList<>(udflugter);
     }
 
-//----------------------------------------------------
+//-----------------------------------------------------------------------------------------------------
 
     //createTilmelding
     public Tilmelding createTilmelding(LocalDate ankomstDato, LocalDate afrejseDato,boolean foredragsholder,Deltager deltager){
@@ -132,7 +132,11 @@ public class Konference {
 
         return tilmelding;
     }
-    //------------------------------------------------
+
+    public ArrayList<Tilmelding> getTilmeldinger() {
+        return new ArrayList<>(tilmeldinger) ;
+    }
+    //------------------------------------------------------------------------------------------------------
     //tostringMetode
 
     @Override
@@ -144,11 +148,11 @@ public class Konference {
                 ", slutDato=" + slutDato +
                 ", kortBeskrivelse='" + kortBeskrivelse + '\'' +
                 ", konferenceAfgift=" + konferenceAfgift +
-                ", hoteller=" + hoteller +
-                ", udflugter=" + udflugter +
-                ", tilmeldinger=" + tilmeldinger +
-                ", tilmelding=" + tilmelding +
                 '}';
     }
+
+
     //TODO metoder
+
+
 }

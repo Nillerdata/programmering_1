@@ -37,7 +37,6 @@ public class Ledsager {
         return "Ledsager{" +
                 "navn='" + navn + '\'' +
                 ", tlf='" + tlf + '\'' +
-                ", tilmelding=" + tilmelding +
                 '}';
     }
 }

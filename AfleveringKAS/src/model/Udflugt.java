@@ -123,10 +123,6 @@ public class Udflugt {
                 ", navn='" + navn + '\'' +
                 ", mødested='" + mødested + '\'' +
                 ", pris=" + pris +
-                ", konference=" + konference +
-                ", tilmeldinger=" + tilmeldinger +
                 '}';
     }
-
-
 }

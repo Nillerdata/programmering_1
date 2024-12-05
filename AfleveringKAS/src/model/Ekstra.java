@@ -45,7 +45,6 @@ public class Ekstra {
         return "Ekstra{" +
                 "pris=" + pris +
                 ", tilkøb='" + tilkøb + '\'' +
-                ", hotel=" + hotel +
                 '}';
     }
 

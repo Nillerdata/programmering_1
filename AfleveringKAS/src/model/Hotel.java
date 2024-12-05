@@ -126,7 +126,6 @@ public class Hotel {
     //--------------------------------------------
     //tostring metode
 
-
     @Override
     public String toString() {
         return "Hotel{" +
@@ -135,9 +134,6 @@ public class Hotel {
                 ", adresse='" + adresse + '\'' +
                 ", enkeltpris=" + enkeltpris +
                 ", dobbeltpris=" + dobbeltpris +
-                ", ekstraArrayList=" + ekstraArrayList +
-                ", tilmeldinger=" + tilmeldinger +
-                ", konferencer=" + konferencer +
                 ", ekstra=" + ekstra +
                 '}';
     }

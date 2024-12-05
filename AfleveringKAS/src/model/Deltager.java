@@ -120,8 +120,6 @@ public class Deltager {
                 ", firmaNavn='" + firmaNavn + '\'' +
                 ", tlfnr='" + tlfnr + '\'' +
                 ", firmaTlf='" + firmaTlf + '\'' +
-                ", tilmelding=" + tilmelding +
-                ", Tilmeldinger=" + Tilmeldinger +
                 '}';
     }
 }
