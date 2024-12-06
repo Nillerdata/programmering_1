@@ -1,11 +1,12 @@
 package gui;
 
+
+import controller.Controller;
 import javafx.application.Application;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
-import javafx.scene.control.Label;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 import model.*;
@@ -18,17 +19,18 @@ import storage.Storage;
 
 import java.util.List;
 
-public class Gui extends Application {
+public class GUI extends Application {
 
-    private TextField txfKonfernce, txfDeltager, txfUdflugter;
 
-    private Button BtnCreateUdflugt, BtnCreateKonfernce, BtnCreateLedsager;
+    private TextField hek;
 
-    private final ListView <Konference> konferenceListView = new ListView();
-    private final ListView <Udflugt> udflugtListView = new ListView<>();
-    private final ListView <Hotel> hotelListView = new ListView<>();
-    private final ListView <Deltager> deltagerListView = new ListView<>();
-    private final ListView <Ledsager> ledsagerListView = new ListView<>();
+    private Button BtnCreateUdflugt, BtnCreateKonfernce, BtnCreateLedsager, btnCreateDeltager, btnCreatetilmelding;
+
+    private final ListView<Konference> konferenceListView = new ListView();
+    private final ListView<Udflugt> udflugtListView = new ListView<>();
+    private final ListView<Hotel> hotelListView = new ListView<>();
+    private final ListView<Deltager> deltagerListView = new ListView<>();
+    private final ListView<Ledsager> ledsagerListView = new ListView<>();
 
     public void start(Stage stage) {
         stage.setTitle("KAS - Systemet");
@@ -48,25 +50,60 @@ public class Gui extends Application {
         pane.setVgap(15);
 
         //Opretter vores listViews
-        pane.add(konferenceListView,0, 1, 2, 5);
+        pane.add(konferenceListView, 0, 1, 2, 5);
 
-        //Opretter vores Buttons
+        pane.add(deltagerListView,10,1,2,5);
+
+        //Opretter vores Buttons og kobler buttons op
         BtnCreateKonfernce = new Button("Opret Konference");
-        pane.add(BtnCreateKonfernce,1,8);
+        pane.add(BtnCreateKonfernce, 1, 8);
+        BtnCreateKonfernce.setOnAction(event -> createOpretKonference());
 
-        BtnCreateLedsager = new Button("Opret Udflugt");
+        BtnCreateLedsager = new Button("Opret Ledsager");
+        pane.add(BtnCreateLedsager,4,2);
+
+        BtnCreateUdflugt = new Button("Opret udflugt");
+        pane.add(BtnCreateUdflugt,5,2);
+
+        btnCreateDeltager = new Button("Opret deltager");
+        pane.add(btnCreateDeltager,6,2);
+
+        btnCreatetilmelding = new Button("Opret Tilmeldning");
+        pane.add(btnCreatetilmelding,7,2);
+
 
         // Laver vores ListViwes
 
         List<Konference> storageForestilling = Storage.getKonferencer();
 
         ObservableList<Konference> konferenceObservableList = FXCollections.observableArrayList(storageForestilling);
+        //-----------------------------------------------------------------
+
+
+        List<Deltager> storageDeltager = Storage.getDeltagere();
+
+        ObservableList<Deltager> deltagerObservableList = FXCollections.observableArrayList(storageDeltager);
 
         //initalisere vores Listwievs
 
         konferenceListView.setItems(konferenceObservableList);
 
+        deltagerListView.setItems(deltagerObservableList);
+
 
     }
+
+
+    private void createOpretKonference() {
+        Window_OpretKonference dia = new Window_OpretKonference("Opret Konference");
+        dia.showAndWait();
+
+        // Wait for the modal dialog to close
+
+        konferenceListView.getItems().setAll(Controller.getKonferencer());
+        int index = konferenceListView.getItems().size() - 1;
+        konferenceListView.getSelectionModel().select(index);
+    }
+
 }
 

@@ -15,7 +15,6 @@ public class Konference {
     private final ArrayList<Hotel> hoteller = new ArrayList<>();
     private final ArrayList<Udflugt>udflugter = new ArrayList<>();
     private final ArrayList<Tilmelding>tilmeldinger = new ArrayList<>();
-    private Tilmelding tilmelding;
     //---------------------------------------------------------------------
     //Constructor
     public Konference(String navn, String adresse, LocalDate startDato, LocalDate slutDato,
@@ -148,6 +147,7 @@ public class Konference {
                 ", slutDato=" + slutDato +
                 ", kortBeskrivelse='" + kortBeskrivelse + '\'' +
                 ", konferenceAfgift=" + konferenceAfgift +
+                ", tilmelding=" + tilmeldinger +
                 '}';
     }
 

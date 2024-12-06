@@ -17,8 +17,8 @@ public class Tilmelding {
     private Ledsager ledsager;
     private Deltager deltager;
     private Konference konference;
-    private Tilmelding tilmelding;
-    private Udflugt udflugt;
+
+
 
     //---------------------------------------------
     //constructor
@@ -211,15 +211,9 @@ public class Tilmelding {
     @Override
     public String toString() {
         return "Tilmelding{" +
-                "ankomstDato=" + ankomstDato +
-                ", afrejseDato=" + afrejseDato +
-                ", foredragsholder=" + foredragsholder +
-                ", hotel=" + hotel +
-                ", ledsager=" + ledsager +
-                ", deltager=" + deltager +
-                ", konference=" + konference +
-                ", tilmelding=" + tilmelding +
-                ", udflugt=" + udflugt +
+                "hotel=" + hotel +
+                ", deltager=" + deltager.getNavn() +
+
                 '}';
     }
 }

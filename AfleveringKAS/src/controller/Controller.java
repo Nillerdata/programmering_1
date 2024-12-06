@@ -10,6 +10,7 @@ import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+
 public class Controller {
 
 
@@ -44,6 +45,7 @@ public class Controller {
     public static Tilmelding createTilmelding(LocalDate ankomstDato, LocalDate afrejseDato, boolean foredragsholder, Konference konference, Deltager deltager) {
         Tilmelding tilmelding = konference.createTilmelding(ankomstDato, afrejseDato, foredragsholder, deltager);
         Storage.addTilmelding(tilmelding);
+
         return tilmelding;
     }
 
@@ -98,7 +100,8 @@ public class Controller {
 
     //------------------------------------------------
     public static ArrayList<String> printDeltagereOgLedsagere(Konference konference) {
-        ArrayList<String>leverer = new ArrayList<>();
+
+        ArrayList<String> leverer = new ArrayList<>();
         for (Tilmelding t : getTilmeldinger()) {
             if (t.getLedsager() != null) {
                 leverer.add("Deltagernavn" + t.getDeltager().getNavn() + " Ledsager " + t.getLedsager().getNavn());
@@ -115,18 +118,21 @@ public class Controller {
             konference.addhotel(hotel);
         }
     }
-    public static void addTilmeldingTilUdflugt(Udflugt udflugt,Tilmelding tilmelding){
-        if(!udflugt.getTilmeldinger().contains(tilmelding)){
+
+    public static void addTilmeldingTilUdflugt(Udflugt udflugt, Tilmelding tilmelding) {
+        if (!udflugt.getTilmeldinger().contains(tilmelding)) {
             udflugt.addTilmelding(tilmelding);
         }
     }
-    public static void addTilmeldingTilHotel(Hotel hotel,Tilmelding tilmelding){
-        if(!hotel.getTilmeldinger().contains(tilmelding)){
+
+    public static void addTilmeldingTilHotel(Hotel hotel, Tilmelding tilmelding) {
+        if (!hotel.getTilmeldinger().contains(tilmelding)) {
             hotel.addTilmelding(tilmelding);
         }
     }
-    public static void addEkstraTilTilmelding(Hotel hotel, Tilmelding Tilmelding,Ekstra ekstra) {
-        if ( hotel.getEkstraArrayList().contains(ekstra)) {
+
+    public static void addEkstraTilTilmelding(Hotel hotel, Tilmelding Tilmelding, Ekstra ekstra) {
+        if (hotel.getEkstraArrayList().contains(ekstra)) {
             Tilmelding.addEkstra(ekstra);
         }
     }
@@ -134,87 +140,93 @@ public class Controller {
 
     //------------------------------------------------------------------------------------
     //
-    public static ArrayList<Tilmelding> getdeltagerTilkonferencen(Konference konference) {
+    public static ArrayList<String> getdeltagerTilkonferencen(Konference konference) {
 
-        ArrayList<Tilmelding> deltager = konference.getTilmeldinger();
+        ArrayList<Tilmelding> tilmeldinger = konference.getTilmeldinger();
+        ArrayList<String> deltager = new ArrayList<>();
+        for (Tilmelding t : tilmeldinger) {
+            deltager.add(t.getDeltager().getNavn());
+        }
 
         ArraylistinsertioneSort(deltager);
 
         return deltager;
     }
+
     //-------------------------------------------------------------------------------------
     //sorteringsalgoritme
-    public static void ArraylistinsertioneSort(ArrayList<Tilmelding> list) {
+    public static void ArraylistinsertioneSort(ArrayList<String> list) {
         for (int i = 1; i < list.size(); i++) {
 
-            Tilmelding next = list.get(i);
+            String next = list.get(i);
             int j = i;
             boolean found = false;
             while (!found && j > 0) {
-                if (next.getDeltager().getNavn().compareTo(list.get(j-1).getDeltager().getNavn())>=0) {
+                if (next.compareTo(list.get(j - 1)) >= 0) {
                     found = true;
                 } else {
 
-                    list.set(j,list.get(j-1));
+                    list.set(j, list.get(j - 1));
                     j--;
                 }
             }
-            list.set(j,next);
+            list.set(j, next);
         }
     }
 
-//-------------------------------------------------------------------------------
-public static ArrayList<String> getUdflugtMedDeltagerOgLedsager(Konference konference) {
+    //-------------------------------------------------------------------------------
+    public static ArrayList<String> getUdflugtMedDeltagerOgLedsager(Konference konference) {
 
 
-    ArrayList<String> Result = new ArrayList<>();
+        ArrayList<String> Result = new ArrayList<>();
 
-    ArrayList<Udflugt> udflugter = konference.getUdflugter();
+        ArrayList<Udflugt> udflugter = konference.getUdflugter();
 
-    for (Udflugt udflugt : udflugter) {
+        for (Udflugt udflugt : udflugter) {
 
-        Result.add("Navn " + udflugt.getNavn());
-        ArrayList<Tilmelding> tilmeldinger = udflugt.getTilmeldinger();
+            Result.add("Navn " + udflugt.getNavn());
+            ArrayList<Tilmelding> tilmeldinger = udflugt.getTilmeldinger();
 
-        for (Tilmelding tilmelding : tilmeldinger) {
+            for (Tilmelding tilmelding : tilmeldinger) {
 
-            Ledsager ledsager = tilmelding.getLedsager();
-            Result.add("\n Navn " + ledsager.getNavn() + "TlfNr" + ledsager.getTlf());
+                Ledsager ledsager = tilmelding.getLedsager();
+                Result.add("\n Navn " + ledsager.getNavn() + "TlfNr" + ledsager.getTlf());
 
-            Deltager deltager = tilmelding.getDeltager();
-            Result.add("\n (Navn" + deltager.getNavn() + " tlfNr " + deltager.getTlfnr() + ")");
-        }
-    }
-
-    return Result;
-}
-
-
-//------------------------------------------------------------------------------------------
-public static ArrayList<String> getHotelMedDeltagerogledsager(Konference konference) {
-
-    ArrayList<String> Result = new ArrayList<>();
-
-    ArrayList<Hotel> hoteller = konference.getHoteller();
-
-    for (Hotel hotel : hoteller) {
-
-        Result.add("Navn " + hotel.getNavn());
-
-        ArrayList<Tilmelding> tilmeldinger = hotel.getTilmeldinger();
-
-        for (Tilmelding tilmelding : tilmeldinger) {
-
-            if (tilmelding.getLedsager() != null) {
-                Result.add("\n navn " + tilmelding.getDeltager().getNavn() + " AnkomstDato " + tilmelding.getAnkomstDato() + " AfrejseDato " + tilmelding.getAfrejseDato() + " ledsager " + tilmelding.getLedsager().getNavn() + " Ekstra service " + tilmelding.getEkstras() + "Dobbelt værelse ");
-            } else {
-                Result.add("\n Navn" + tilmelding.getDeltager().getNavn() + " AnkomstDato " + tilmelding.getAnkomstDato() + " AfrejseDato " + tilmelding.getAfrejseDato() + " Ekstra service " + tilmelding.getEkstras() + " Enkelt værelse");
+                Deltager deltager = tilmelding.getDeltager();
+                Result.add("\n (Navn" + deltager.getNavn() + " tlfNr " + deltager.getTlfnr() + ")");
             }
         }
+
+        return Result;
     }
-    return Result;
-}
-//--------------------------------------------------------------------------------------------------
+
+
+    //------------------------------------------------------------------------------------------
+    public static ArrayList<String> getHotelMedDeltagerogledsager(Konference konference) {
+
+        ArrayList<String> Result = new ArrayList<>();
+
+        ArrayList<Hotel> hoteller = konference.getHoteller();
+
+        for (Hotel hotel : hoteller) {
+
+            Result.add("Navn " + hotel.getNavn());
+
+            ArrayList<Tilmelding> tilmeldinger = hotel.getTilmeldinger();
+
+            for (Tilmelding tilmelding : tilmeldinger) {
+
+                if (tilmelding.getLedsager() != null) {
+                    Result.add("\n navn " + tilmelding.getDeltager().getNavn() + " AnkomstDato " + tilmelding.getAnkomstDato() + " AfrejseDato " + tilmelding.getAfrejseDato() + " ledsager " + tilmelding.getLedsager().getNavn() + " Ekstra service " + tilmelding.getEkstras() + "Dobbelt værelse ");
+                } else {
+                    Result.add("\n Navn" + tilmelding.getDeltager().getNavn() + " AnkomstDato " + tilmelding.getAnkomstDato() + " AfrejseDato " + tilmelding.getAfrejseDato() + " Ekstra service " + tilmelding.getEkstras() + " Enkelt værelse");
+                }
+            }
+        }
+        return Result;
+    }
+
+    //--------------------------------------------------------------------------------------------------
     public static ArrayList<String> getDeltagerMedFuldInfo(Deltager deltager) {
 
         ArrayList<String> result = new ArrayList<>();
@@ -228,26 +240,38 @@ public static ArrayList<String> getHotelMedDeltagerogledsager(Konference konfere
         return result;
 
     }
-//-------------------------------------------------------------------------------------------------------
-public static void Tofile(ArrayList<String>data,String fileName){
 
-    try(Scanner scan = new Scanner(System.in);PrintWriter printWriter = new PrintWriter(fileName)){
-        printWriter.println(data);
+    //-------------------------------------------------------------------------------------------------------
+    public static void Tofile(ArrayList<String> data, String fileName) {
 
-        System.out.println("fil er scannet");
-    }catch (IOException e){
-        System.out.println(e.getMessage());
+        try (Scanner scan = new Scanner(System.in); PrintWriter printWriter = new PrintWriter(fileName)) {
+            printWriter.println(data);
+
+            System.out.println("fil er scannet");
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+        }
     }
-}
 
-//------------------------------------------------------------------------------------------------------
+    //------------------------------------------------------------------------------------------------------
 //samlet pris metode
-    public static double samletpris(Tilmelding tilmelding){
+    public static double samletpris(Tilmelding tilmelding) {
         double pris = 0.0;
         pris = tilmelding.getSamletPris();
         return pris;
     }
-//---------------------------------------------------------------------------------------------------------
 
+    //---------------------------------------------------------------------------------------------------------
+//opdateringsmetoder
+    public static void updateKonference(Konference konference, String navn, String adresse, LocalDate startDato, LocalDate slutDato,
+                                        String kortBeskrivelse, double konferenceAfgift) {
+        konference.setNavn(navn);
+        konference.setAdresse(adresse);
+        konference.setStartDato(startDato);
+        konference.setSlutDato(slutDato);
+        konference.setKortBeskrivelse(kortBeskrivelse);
+        konference.setKonferenceAfgift(konferenceAfgift);
+    }
+//----------------------------------------------------------------------
 
 }

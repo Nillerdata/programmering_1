@@ -118,11 +118,8 @@ public class Udflugt {
     public String toString() {
         return "Udflugt{" +
                 "dato=" + dato +
-                ", startTidspunkt=" + startTidspunkt +
-                ", slutTidspunkt=" + slutTidspunkt +
-                ", navn='" + navn + '\'' +
-                ", mødested='" + mødested + '\'' +
                 ", pris=" + pris +
+                ", navn='" + navn + '\'' +
                 '}';
     }
 }

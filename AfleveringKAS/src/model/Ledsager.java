@@ -36,7 +36,6 @@ public class Ledsager {
     public String toString() {
         return "Ledsager{" +
                 "navn='" + navn + '\'' +
-                ", tlf='" + tlf + '\'' +
                 '}';
     }
 }

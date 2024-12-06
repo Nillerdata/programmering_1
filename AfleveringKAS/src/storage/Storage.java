@@ -3,13 +3,14 @@ package storage;
 import model.*;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Storage {
     //arraylister
     private static ArrayList<Konference>konferencer = new ArrayList<>();
     private static ArrayList<Hotel>hoteller = new ArrayList<>();
     private static ArrayList<Deltager>deltagere = new ArrayList<>();
-    private static ArrayList<Tilmelding>tilmeldinger = new ArrayList<>();
+    private static List<Tilmelding> tilmeldinger = new ArrayList<>();
     private static ArrayList<Udflugt>udflugter = new ArrayList<>();
     public static ArrayList<Ekstra>ekstraArrayList = new ArrayList<>();
     public static ArrayList<Ledsager>ledsagere = new ArrayList<>();

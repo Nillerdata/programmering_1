@@ -1,43 +1,51 @@
-package model;
+package gui;
+
 
 import controller.Controller;
+import javafx.application.Application;
+import model.*;
 
-import java.sql.SQLOutput;
 import java.time.LocalDate;
 import java.time.LocalTime;
-import java.util.Arrays;
 
-public class App {
+public class GUI_APP {
+
     public static void main(String[] args) {
 
+        initStorage();
+        Application.launch(gui.GUI.class);
 
-    //konferencer
-   Konference k1 = Controller.createKonference("Hav og Himmel","OrmslevVej",
-            LocalDate.of(2023,10,18),LocalDate.of(2023,10,20),
-            "miljø",1500);
+    }
 
-    //hoteller
-       Hotel h1 = Controller.createHotel("Den hvide svane","203023","funder",1050,1250);
+    private static void initStorage(){
+
+        //konferencer
+        Konference k1 = Controller.createKonference("Hav og Himmel","OrmslevVej",
+                LocalDate.of(2023,10,18),LocalDate.of(2023,10,20),
+                "miljø",1500);
+
+        //hoteller
+        Hotel h1 = Controller.createHotel("Den hvide svane","203023","funder",1050,1250);
         Controller.addHotelTilKonference(k1,h1);
         //------------------------------------------------------------------
         //ekstra
-      Ekstra e1=  Controller.createEkstra(50,"WIFI",h1);
+        Ekstra e1=  Controller.createEkstra(50,"WIFI",h1);
 
 //-----------------------------------------------------------------------
         //Udflugt
-        Udflugt u1 = Controller.createUdflugt(LocalDate.of(2024,12,18),LocalTime.now(),LocalTime.now(),"Byrundtur","Odense",125,k1);
+        Udflugt u1 = Controller.createUdflugt(LocalDate.of(2024,12,18), LocalTime.now(),LocalTime.now(),"Byrundtur","Odense",125,k1);
         Udflugt u2 = Controller.createUdflugt(LocalDate.of(2024,12,19), LocalTime.now(), LocalTime.now(),"Egeskov","Indgang",75,k1);
         Udflugt u3 = Controller.createUdflugt(LocalDate.of(2024,12,20),LocalTime.now(),LocalTime.now(),"Trapholt","Kolding",200,k1);
 
         //---------------------------------------------------
 
-   //deltagere
+        //deltagere
 
-  Deltager d1 = Controller.createDeltager("Finn Madsen","Silkeborg","DK","23303");
+        Deltager d1 = Controller.createDeltager("Finn Madsen","Silkeborg","DK","23303");
         Deltager d2 = Controller.createDeltager("Niels Petersen","Silkeborg","Dk","2034");
         Deltager d3 = Controller.createDeltager("Peter Sommer","Silkeborg","DK","1239912");
         Deltager d4 = Controller.createDeltager("Lone Jensen","Bobbity","DK","2023");
-  //-----------------------------------------------------------------------------------------------
+        //-----------------------------------------------------------------------------------------------
 
         //tilmeldinger
         Tilmelding t1 = Controller.createTilmelding(LocalDate.of(2023,10,18),LocalDate.of(2023,10,20),
@@ -58,23 +66,24 @@ public class App {
         Controller.addTilmeldingTilHotel(h1,t2);
         Controller.addTilmeldingTilHotel(h1,t3);
         Controller.addTilmeldingTilHotel(h1,t4);
-  //------------------------------------------------------------------------------
+        //------------------------------------------------------------------------------
         //tilføj tilmelding til udflugt
 
-Controller.addTilmeldingTilUdflugt(u1,t3);
-Controller.addTilmeldingTilUdflugt(u2,t3);
-Controller.addTilmeldingTilUdflugt(u1,t4);
-Controller.addTilmeldingTilUdflugt(u3,t4);
+        Controller.addTilmeldingTilUdflugt(u1,t3);
+        Controller.addTilmeldingTilUdflugt(u2,t3);
+        Controller.addTilmeldingTilUdflugt(u1,t4);
+        Controller.addTilmeldingTilUdflugt(u3,t4);
 //-----------------------------------------------------------------
 //tilføj ekstra til tilmelding
         Controller.addEkstraTilTilmelding(h1,t3,e1);
-        Controller.addEkstraTilTilmelding(h1,t4,e1);
+//        Controller.addEkstraTilTilmelding(h1,t4,e1);
         //--------------------------------------------------------------------
-//        System.out.println(Controller.getdeltagerTilkonferencen(k1));
+        System.out.println(Controller.getdeltagerTilkonferencen(k1));
         System.out.println(Controller.getUdflugtMedDeltagerOgLedsager(k1));
-//        System.out.println(Controller.getHotelMedDeltagerogledsager(k1));
-//        System.out.println(Controller.getDeltagerMedFuldInfo(d1));
 
-Controller.Tofile(Controller.getHotelMedDeltagerogledsager(k1),"hotelnavn");
+        System.out.println(Controller.getDeltagerMedFuldInfo(d1));
+
+        Controller.getdeltagerTilkonferencen(k1);
     }
+
 }

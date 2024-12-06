@@ -115,11 +115,6 @@ public class Deltager {
     public String toString() {
         return "Deltager{" +
                 "navn='" + navn + '\'' +
-                ", adresse='" + adresse + '\'' +
-                ", byOgLand='" + byOgLand + '\'' +
-                ", firmaNavn='" + firmaNavn + '\'' +
-                ", tlfnr='" + tlfnr + '\'' +
-                ", firmaTlf='" + firmaTlf + '\'' +
                 '}';
     }
 }
