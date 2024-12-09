@@ -3,24 +3,24 @@ package model;
 import java.util.ArrayList;
 
 public class Hotel {
+
     private String navn;
     private String tlf;
     private String adresse;
-    private double enkeltpris;
-    private double dobbeltpris;
-    private  ArrayList<Ekstra>ekstraArrayList = new ArrayList<>();
-    //TODO linkattributter
-    private final ArrayList<Tilmelding>tilmeldinger = new ArrayList<>();
-    private final ArrayList<Konference>konferencer = new ArrayList<>();
-    private Ekstra ekstra;
+    private double enkeltværesle;
+    private double doubleværelse;
+    private ArrayList<Konference> konferences = new ArrayList<>();
+    private ArrayList<Tilmelding> tilmeldinger = new ArrayList<>();
+    private ArrayList<Ekstra> ekstras = new ArrayList<>();
 
-    public Hotel(String navn, String tlf, String adresse, double enkeltpris, double dobbeltpris) {
+    public Hotel(String navn, String tlf, String adresse, double enkeltværesle, double doubleværelse) {
         this.navn = navn;
         this.tlf = tlf;
         this.adresse = adresse;
-        this.enkeltpris = enkeltpris;
-        this.dobbeltpris = dobbeltpris;
+        this.enkeltværesle = enkeltværesle;
+        this.doubleværelse = doubleværelse;
     }
+
 
     public String getNavn() {
         return navn;
@@ -46,95 +46,84 @@ public class Hotel {
         this.adresse = adresse;
     }
 
-    public double getEnkeltpris() {
-        return enkeltpris;
+    public double getEnkeltværeslePris() {
+        return enkeltværesle;
     }
 
-    public void setEnkeltpris(double enkeltpris) {
-        this.enkeltpris = enkeltpris;
+    public void setEnkeltværesle(double enkeltværesle) {
+        this.enkeltværesle = enkeltværesle;
     }
 
-    public double getDobbeltpris() {
-        return dobbeltpris;
+    public double getDoubleværelsePris() {
+        return doubleværelse;
     }
 
-    public void setDobbeltpris(double dobbeltpris) {
-        this.dobbeltpris = dobbeltpris;
-    }
-    //------------------------------------------------
-    //TODO linkattributter
-    //link attributter til ekstra
-    public Ekstra createEkstra(double pris, String tilkøb){
-        Ekstra ekstra = new Ekstra(pris,tilkøb,this);
-        ekstraArrayList.add(ekstra);
-        return ekstra;
-    }
-    //get metode til ekstraarraylist
-    public ArrayList<Ekstra> getEkstraArrayList() {
-        return new ArrayList<>(ekstraArrayList);
-    }
-    //---------------------------
-
-
-
-    //----------------------------------------------------
-    // Hotel 0..* aggregering - 0..* konference
-    //add
-    public void addKonference(Konference konference){
-        if(!konferencer.contains(konference)){
-            konferencer.add(konference);
-            konference.addhotel(this);
-        }
-    }
-    //remove
-    public void removeKonference(Konference konference){
-        if(konferencer.contains(konference)){
-            konferencer.add(konference);
-            konference.removeHotel(this);
-        }
-    }
-    //get
-
-    public ArrayList<Konference> getKonferencer() {
-        return new ArrayList<>(konferencer);
+    public void setDoubleværelse(double doubleværelse) {
+        this.doubleværelse = doubleværelse;
     }
 
-    //------------------------------
-    //hotel 0..1 -- *Tilmelding
 
-    //add
-    public void addTilmelding(Tilmelding tilmelding){
-        if(!tilmeldinger.contains(tilmelding)){
-            tilmeldinger.add(tilmelding);
-            tilmelding.setHotel(this);
-        }
-
-    }
-    //remove
-    public void removeTilmelding(Tilmelding tilmelding){
-    if(tilmeldinger.contains(tilmelding)){
-        tilmeldinger.remove(tilmelding);
-        tilmelding.setHotel(null);
-    }
-    }
-    //get
     public ArrayList<Tilmelding> getTilmeldinger() {
         return new ArrayList<>(tilmeldinger);
     }
 
+    public Ekstra CreateEkstra(String tilkøb,double pris){
+        Ekstra ekstra1 = new Ekstra(tilkøb,pris);
+        ekstras.add(ekstra1);
+        return ekstra1;
+    }
 
-    //--------------------------------------------
-    //tostring metode
+    public ArrayList<Ekstra> getEkstras() {
+        return new ArrayList<>(ekstras);
+    }
+
+
+
+    public ArrayList<Konference> getKonferences() {
+        return new ArrayList<>(konferences);
+    }
+
+
+    public void addkonference(Konference konference){
+        if(!konferences.contains(konference)){
+            konferences.add(konference);
+            konference.addHotel(this);
+
+        }
+    }
+    public void removeKonference(Konference konference){
+        if(konferences.contains(konference)){
+            konferences.remove(konference);
+            konference.removeHotel(this);
+        }
+    }
+
+    public void AddTilmeldning(Tilmelding tilmelding){
+        if(!tilmeldinger.contains(tilmelding)){
+            tilmeldinger.add(tilmelding);
+            tilmelding.setHotel(this);
+        }
+    }
+    public void removeTilmelding(Tilmelding tilmelding){
+        if(tilmeldinger.contains(tilmelding)){
+            tilmeldinger.remove(tilmelding);
+            tilmelding.setHotel(null);
+        }
+    }
+
+    public String GetHotelINfo(){
+        return getNavn() + " Adresse " + getAdresse();
+
+    }
 
     @Override
     public String toString() {
         return "Hotel{" +
-                "navn='" + navn + '\'' +
+                "adresse='" + adresse + '\'' +
+                ", navn='" + navn + '\'' +
                 ", tlf='" + tlf + '\'' +
-                ", adresse='" + adresse + '\'' +
-                ", enkeltpris=" + enkeltpris +
-                ", dobbeltpris=" + dobbeltpris +
-                ", ekstra=" + ekstra +
+                ", tilmeldinger=" + tilmeldinger +
+
                 '}';
     }
 }

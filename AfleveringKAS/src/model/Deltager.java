@@ -3,38 +3,33 @@ package model;
 import java.util.ArrayList;
 
 public class Deltager {
+
     private String navn;
     private String adresse;
-    private String byOgLand;
-    private String firmaNavn;
-    private String tlfnr;
-    private String firmaTlf;
-    //-------------------------------------------------------------------
-    //TODO linkattributter
-    Tilmelding tilmelding;
-
-    private final ArrayList<Tilmelding>Tilmeldinger = new ArrayList<>();
+    private String land;
+    private String firmanavn;
+    private String tlfNr;
+    private String firmatlfNr;
+    private ArrayList<Tilmelding> tilmeldinger = new ArrayList<>();
 
 
-    //constructors
-    //med firma
-    public Deltager(String navn, String adresse, String byOgLand, String firmaNavn, String tlfnr, String firmaTlf) {
+    public Deltager(String navn, String adresse, String land, String firmanavn, String tlfNr, String firmatlfNr) {
         this.navn = navn;
         this.adresse = adresse;
-        this.byOgLand = byOgLand;
-        this.firmaNavn = firmaNavn;
-        this.tlfnr = tlfnr;
-        this.firmaTlf = firmaTlf;
-    }
-    //uden firma
-    public Deltager(String navn, String adresse, String byOgLand, String tlfnr) {
-        this.navn = navn;
-        this.adresse = adresse;
-        this.byOgLand = byOgLand;
-        this.tlfnr = tlfnr;
+        this.land = land;
+        this.firmanavn = firmanavn;
+        this.tlfNr = tlfNr;
+        this.firmatlfNr = firmatlfNr;
     }
 
-    //gettere og settere
+    public Deltager(String navn, String adresse, String land, String tlfNr) {
+        this.navn = navn;
+        this.adresse = adresse;
+        this.land = land;
+        this.tlfNr = tlfNr;
+    }
+
+
     public String getNavn() {
         return navn;
     }
@@ -51,70 +46,66 @@ public class Deltager {
         this.adresse = adresse;
     }
 
-    public String getByOgLand() {
-        return byOgLand;
+    public String getLand() {
+        return land;
     }
 
-    public void setByOgLand(String byOgLand) {
-        this.byOgLand = byOgLand;
+    public void setLand(String land) {
+        this.land = land;
     }
 
-    public String getFirmaNavn() {
-        return firmaNavn;
+    public String getFirmanavn() {
+        return firmanavn;
     }
 
-    public void setFirmaNavn(String firmaNavn) {
-        this.firmaNavn = firmaNavn;
+    public void setFirmanavn(String firmanavn) {
+        this.firmanavn = firmanavn;
     }
 
-    public String getTlfnr() {
-        return tlfnr;
+    public String getTlfNr() {
+        return tlfNr;
     }
 
-    public void setTlfnr(String tlfnr) {
-        this.tlfnr = tlfnr;
+    public void setTlfNr(String tlfNr) {
+        this.tlfNr = tlfNr;
     }
 
-    public String getFirmaTlf() {
-        return firmaTlf;
+    public String getFirmatlfNr() {
+        return firmatlfNr;
     }
 
-    public void setFirmaTlf(String firmaTlf) {
-        this.firmaTlf = firmaTlf;
+    public void setFirmatlfNr(String firmatlfNr) {
+        this.firmatlfNr = firmatlfNr;
     }
 
-    //--------------------------------
-    //TODO linkattributter
+
+    //------------------------------------------------------------
+
+    public ArrayList<Tilmelding> getTilmeldinger() {
+        return new ArrayList<>(tilmeldinger);
+    }
 
     public void addTilmelding(Tilmelding tilmelding){
-        if(!Tilmeldinger.contains(tilmelding)){
-            Tilmeldinger.add(tilmelding);
+        if(!tilmeldinger.contains(tilmelding)){
+            tilmeldinger.add(tilmelding);
             tilmelding.setDeltager(this);
         }
     }
+
 //    public void removeTilmelding(Tilmelding tilmelding){
-//        if(Tilmeldinger.contains(tilmelding)){
-//            Tilmeldinger.remove(tilmelding);
-//            tilmelding.setDeltager(null);
+//        if(tilmeldinger.contains(tilmelding)){
+//            tilmeldinger.remove(tilmelding);
 //        }
-//    }
+//}
 
-
-    //------------------------------------------------
-    //getmetode til arraylist
-
-    public ArrayList<Tilmelding> getTilmeldinger() {
-        return new ArrayList<>(Tilmeldinger);
-    }
-
-    //------------------------------------------------
-    //tostring metode
+    // muligvis en remove
 
 
     @Override
     public String toString() {
         return "Deltager{" +
                 "navn='" + navn + '\'' +
-                '}';
+                ", adresse='" + adresse + '\'' +
+                ", land='" + land + '\'';
     }
 }

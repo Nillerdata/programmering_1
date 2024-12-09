@@ -1,53 +1,38 @@
 package model;
 
 public class Ekstra {
+
     private double pris;
     private String tilkøb;
-    //-------------------------------------
-    //TODO linkattributter
     private Hotel hotel;
-    //------------------------------------
-    //constructor
-     Ekstra(double pris, String tilkøb,Hotel hotel) {
-        this.pris = pris;
+
+    Ekstra(String tilkøb, double pris){
         this.tilkøb = tilkøb;
-        this.hotel = hotel;
+        this.pris = pris;
     }
 
     public double getPris() {
         return pris;
     }
 
-    public void setPris(double pris) {
-        this.pris = pris;
+    public void setTilkøb(String tilkøb) {
+        this.tilkøb = tilkøb;
     }
 
     public String getTilkøb() {
         return tilkøb;
     }
 
-    public void setTilkøb(String tilkøb) {
-        this.tilkøb = tilkøb;
+    public void setPris(double pris) {
+        this.pris = pris;
     }
 
-
-    //TODO linkattributter
-    //linkattributter til hotel
     public Hotel getHotel() {
         return hotel;
     }
 
-    //--------------------------------------------------
-    //tostring metode
-
     @Override
     public String toString() {
-        return "Ekstra{" +
-                "pris=" + pris +
-                ", tilkøb='" + tilkøb + '\'' +
-                '}';
+        return  "tilkøb='" + getTilkøb();
     }
-
-
-    //TODO metoder?
 }

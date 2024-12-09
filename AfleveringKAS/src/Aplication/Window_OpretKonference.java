@@ -1,7 +1,6 @@
-package gui;
+package Aplication;
 
-
-import controller.Controller;
+import model.controller.Controller;
 import javafx.geometry.HPos;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
@@ -27,7 +26,7 @@ public class Window_OpretKonference extends Stage {
         this.initModality(Modality.APPLICATION_MODAL);
         this.setResizable(false);
 
-
+        this.konference = konference;
 
         this.setTitle(title);
         GridPane pane = new GridPane();
@@ -66,6 +65,7 @@ public class Window_OpretKonference extends Stage {
 
         txfStartDato = new TextField();
         pane.add(txfStartDato,0,5);
+        txfStartDato.setPromptText("yyyy-mm-dd");
 
 
         Label lblSlutDato = new Label("Slutdato");
@@ -73,6 +73,8 @@ public class Window_OpretKonference extends Stage {
 
         txfSlutDato = new TextField();
         pane.add(txfSlutDato,0,7);
+        txfSlutDato.setPromptText("yyyy-mm-dd");
+
 
 
         Label lblBeskrivelse = new Label("Beskrivelse");

@@ -1,19 +1,23 @@
 package model;
 
 public class Ledsager {
+
     private String navn;
     private String tlf;
-    //Linkattribut
+    private Deltager deltager;
     private Tilmelding tilmelding;
 
 
-    Ledsager(String navn, String tlf,Tilmelding tilmelding){
+    Ledsager(String navn, String tlf, Tilmelding tilmelding) {
         this.navn = navn;
         this.tlf = tlf;
         this.tilmelding = tilmelding;
+
     }
 
-
+    public Deltager getDeltager() {
+        return deltager;
+    }
 
     public String getNavn() {
         return navn;
@@ -22,20 +26,12 @@ public class Ledsager {
     public String getTlf() {
         return tlf;
     }
-    //linkattribut
-
-    public Tilmelding getTilmelding() {
-        return tilmelding;
-    }
-
-    //--------------------------------------------
-    //tostring metode
-
 
     @Override
     public String toString() {
         return "Ledsager{" +
-                "navn='" + navn + '\'' +
+                "tlf='" + tlf + '\'' +
+                ", navn='" + navn + '\'' +
                 '}';
     }
 }

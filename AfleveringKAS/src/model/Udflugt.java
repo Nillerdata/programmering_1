@@ -6,120 +6,112 @@ import java.time.LocalTime;
 import java.util.ArrayList;
 
 public class Udflugt {
-    private LocalDate dato;
-    private LocalTime startTidspunkt;
-    private LocalTime slutTidspunkt;
+
+
+    private LocalDate Dato;
+    private LocalTime StartTidspunkt;
+    private LocalTime SlutTidspunkt;
     private String navn;
     private String mødested;
     private double pris;
-    //----------------------------------------
-    //TODO linkattributter
+    private ArrayList<Ledsager> ledsager = new ArrayList<>();
     private Konference konference;
-    private final ArrayList<Tilmelding>tilmeldinger = new ArrayList<>();
-    //----------------------------------------
-    //constructor
-    Udflugt(LocalDate dato, LocalTime startTidspunkt, LocalTime slutTidspunkt,
-            String navn, String mødested, double pris,Konference konference) {
-        this.dato = dato;
-        this.startTidspunkt = startTidspunkt;
-        this.slutTidspunkt = slutTidspunkt;
+    private ArrayList<Tilmelding> tilmeldinger = new ArrayList<>();
+
+    Udflugt(LocalDate dato, LocalTime startTidspunkt, LocalTime slutTidspunkt, String navn, String mødested, double pris, Konference konference) {
+        this.Dato = dato;
+        this.StartTidspunkt = startTidspunkt;
+        this.SlutTidspunkt = slutTidspunkt;
         this.navn = navn;
         this.mødested = mødested;
         this.pris = pris;
+        this.konference = konference;
     }
-    //------------------------------------------
-    //gettere
 
     public LocalDate getDato() {
-        return dato;
+        return Dato;
+    }
+
+    public void setDato(LocalDate dato) {
+        Dato = dato;
     }
 
     public LocalTime getStartTidspunkt() {
-        return startTidspunkt;
+        return StartTidspunkt;
+    }
+
+    public void setStartTidspunkt(LocalTime startTidspunkt) {
+        StartTidspunkt = startTidspunkt;
     }
 
     public LocalTime getSlutTidspunkt() {
-        return slutTidspunkt;
+        return SlutTidspunkt;
+    }
+
+    public void setSlutTidspunkt(LocalTime slutTidspunkt) {
+        SlutTidspunkt = slutTidspunkt;
     }
 
     public String getNavn() {
         return navn;
     }
 
-    public String getMødested() {
-        return mødested;
-    }
-
-    public double getPris() {
-        return pris;
-    }
-    //----------------------------------------------
-    //settere
-
-    public void setDato(LocalDate dato) {
-        this.dato = dato;
-    }
-
-    public void setStartTidspunkt(LocalTime startTidspunkt) {
-        this.startTidspunkt = startTidspunkt;
-    }
-
-    public void setSlutTidspunkt(LocalTime slutTidspunkt) {
-        this.slutTidspunkt = slutTidspunkt;
-    }
-
     public void setNavn(String navn) {
         this.navn = navn;
+    }
+
+    public String getMødested() {
+        return mødested;
     }
 
     public void setMødested(String mødested) {
         this.mødested = mødested;
     }
 
+    public double getPris() {
+        return pris;
+    }
+
     public void setPris(double pris) {
         this.pris = pris;
     }
-    //---------------------------------------------------
-    //TODO linkattributter
 
-    //---------------------------------------------------
-    //udflugt 0..* -- komp konference
+    public ArrayList<Ledsager> getLedsager() {
+        return ledsager;
+    }
 
-    //get
+    public void setLedsager(ArrayList<Ledsager> ledsager) {
+        this.ledsager = ledsager;
+    }
+
     public Konference getKonference() {
         return konference;
     }
-    //---------------------------------------------------
-    //Udflugt 0..* -- 0..* Tilmelding
 
-    //add
-    public void addTilmelding(Tilmelding tilmelding){
-        if(!tilmeldinger.contains(tilmelding)){
+    public void addTilmelding(Tilmelding tilmelding) {
+        if (!tilmeldinger.contains(tilmelding)) {
             tilmeldinger.add(tilmelding);
             tilmelding.addUdflugt(this);
         }
     }
-    //remove
-    public void removeTilmelding(Tilmelding tilmelding){
-        if(tilmeldinger.contains(tilmelding)){
+
+    public void removeTilmeldning(Tilmelding tilmelding) {
+        if (tilmeldinger.contains(tilmelding)) {
             tilmeldinger.remove(tilmelding);
             tilmelding.removeUdflugt(this);
         }
     }
-    //get
 
     public ArrayList<Tilmelding> getTilmeldinger() {
         return new ArrayList<>(tilmeldinger);
     }
-//---------------------------------------------------------
-    //tostring metode
 
     @Override
     public String toString() {
         return "Udflugt{" +
-                "dato=" + dato +
-                ", pris=" + pris +
-                ", navn='" + navn + '\'' +
-                '}';
+                "navn='" + navn + '\'' +
+                ", mødested='" + mødested + '\'' +
+                ", pris=" + pris + '}';
     }
 }
+

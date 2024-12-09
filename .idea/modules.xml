@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AfleveringKAS/AfleveringKAS.iml" filepath="$PROJECT_DIR$/AfleveringKAS/AfleveringKAS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/KASNiko/KASNiko.iml" filepath="$PROJECT_DIR$/KASNiko/KASNiko.iml" />
       <module fileurl="file://$PROJECT_DIR$/afleveringArkitektur/afleveringArkitektur.iml" filepath="$PROJECT_DIR$/afleveringArkitektur/afleveringArkitektur.iml" />
       <module fileurl="file://$PROJECT_DIR$/aflevering_2/aflevering_2.iml" filepath="$PROJECT_DIR$/aflevering_2/aflevering_2.iml" />
       <module fileurl="file://$PROJECT_DIR$/aflevering_terning/aflevering_terning.iml" filepath="$PROJECT_DIR$/aflevering_terning/aflevering_terning.iml" />
@@ -34,6 +35,7 @@
       <module fileurl="file://$PROJECT_DIR$/lek_28/lek_28.iml" filepath="$PROJECT_DIR$/lek_28/lek_28.iml" />
       <module fileurl="file://$PROJECT_DIR$/lek_29/lek_29.iml" filepath="$PROJECT_DIR$/lek_29/lek_29.iml" />
       <module fileurl="file://$PROJECT_DIR$/lek_30_exceptionsOgTekstfiler/lek_30_exceptionsOgTekstfiler.iml" filepath="$PROJECT_DIR$/lek_30_exceptionsOgTekstfiler/lek_30_exceptionsOgTekstfiler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lek_34_Fletning_af_sekvenser/lek_34_Fletning_af_sekvenser.iml" filepath="$PROJECT_DIR$/lek_34_Fletning_af_sekvenser/lek_34_Fletning_af_sekvenser.iml" />
       <module fileurl="file://$PROJECT_DIR$/opgaveYatzy/opgaveYatzy.iml" filepath="$PROJECT_DIR$/opgaveYatzy/opgaveYatzy.iml" />
       <module fileurl="file://$PROJECT_DIR$/programming 1.iml" filepath="$PROJECT_DIR$/programming 1.iml" />
     </modules>

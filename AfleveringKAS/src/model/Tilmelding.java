@@ -1,83 +1,71 @@
 package model;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 
 public class Tilmelding {
-    private LocalDate ankomstDato;
-    private LocalDate afrejseDato;
-    private boolean foredragsholder;
-    //---------------------------------------------
-    //TODO linkattributter
-    private final ArrayList<Ekstra> ekstras = new ArrayList<>();
-    private final ArrayList<Udflugt> udflugter = new ArrayList<>();
-    private final ArrayList<Hotel> Hoteller = new ArrayList<>();
-    private Hotel hotel;
-    private Ledsager ledsager;
+
+    private LocalDate Ankomstdato;
+    private LocalDate AfrejseDato;
+    private Boolean foredragsHolder;
+    private ArrayList<Udflugt> udflugter = new ArrayList<>();
     private Deltager deltager;
+    private Hotel hotel;
     private Konference konference;
+    private ArrayList<Ekstra> ekstras = new ArrayList<>();
+    private Ledsager ledsager;
 
-
-
-    //---------------------------------------------
-    //constructor
-    Tilmelding(LocalDate ankomstDato, LocalDate afrejseDato, boolean foredragsholder, Konference konference, Deltager deltager) {
-        this.ankomstDato = ankomstDato;
-        this.afrejseDato = afrejseDato;
-        this.foredragsholder = foredragsholder;
-        this.konference = konference;
+    Tilmelding(LocalDate ankomstdato, LocalDate afrejseDato, Boolean foredragsHolder, Deltager deltager, Konference konference) {
+        Ankomstdato = ankomstdato;
+        AfrejseDato = afrejseDato;
+        this.foredragsHolder = foredragsHolder;
         this.setDeltager(deltager);
-
+        this.konference = konference;
     }
-    //---------------------------------------------
-    //gettere
 
+    public LocalDate getAnkomstdato() {
+        return Ankomstdato;
+    }
 
-    public LocalDate getAnkomstDato() {
-        return ankomstDato;
+    public Konference getKonference() {
+        return konference;
     }
 
     public LocalDate getAfrejseDato() {
-        return afrejseDato;
+        return AfrejseDato;
     }
 
-    public boolean isForedragsholder() {
-        return foredragsholder;
-    }
-    //---------------------------------------------
-    //settere
-
-    public void setAnkomstDato(LocalDate ankomstDato) {
-        this.ankomstDato = ankomstDato;
+    public Boolean getForedragsHolder() {
+        return foredragsHolder;
     }
 
     public void setAfrejseDato(LocalDate afrejseDato) {
-        this.afrejseDato = afrejseDato;
+        AfrejseDato = afrejseDato;
     }
 
-    public void setForedragsholder(boolean foredragsholder) {
-        this.foredragsholder = foredragsholder;
+    public void setForedragsHolder(Boolean foredragsHolder) {
+        this.foredragsHolder = foredragsHolder;
     }
-    //---------------------------------------------
 
+    public void setAnkomstdato(LocalDate ankomstdato) {
+        Ankomstdato = ankomstdato;
+    }
 
-    //---------------------------------------------
-    //Createmetode
     public Ledsager createLedsager(String navn, String tlf) {
         ledsager = new Ledsager(navn, tlf, this);
         return ledsager;
     }
 
-
-    //get metode
     public Ledsager getLedsager() {
         return ledsager;
     }
 
+    public void setLedsager(Ledsager ledsager) {
+        this.ledsager = ledsager;
+    }
 
-    //---------------------------------------------
-    //hjælpemetode til constructor
     void setDeltager(Deltager deltager) {
         if (this.deltager != deltager) {
             this.deltager = deltager;
@@ -90,61 +78,45 @@ public class Tilmelding {
     public Deltager getDeltager() {
         return deltager;
     }
-    //--------------------------------------
 
-    public Konference getKonference() {
-        return konference;
-    }
-
-
-    //--------------------------------------
-    //tilmelding * -- 0..1 Hotel
-
-    //set
     public void setHotel(Hotel hotel) {
         if (this.hotel != hotel) {
-            Hotel gammelHotel = this.hotel;
-            if (gammelHotel != null) {
-                gammelHotel.removeTilmelding(this);
+            Hotel oldhotel = this.hotel;
+            if (oldhotel != null) {
+                oldhotel.removeTilmelding(this);
             }
             this.hotel = hotel;
             if (hotel != null) {
-                hotel.addTilmelding(this);
+                hotel.AddTilmeldning(this);
             }
+
         }
     }
-    //get
 
-    public ArrayList<Hotel> getHoteller() {
-        return new ArrayList<>(Hoteller);
+    public Hotel getHotel() {
+        return hotel;
     }
-    //---------------------------------------------------
 
+    public ArrayList<Ekstra> getEkstras() {
+        return new ArrayList<>(ekstras);
+    }
 
-    //tilmelding 0..* --> 0..* Ekstra
-
-    //add
     public void addEkstra(Ekstra ekstra) {
         if (!ekstras.contains(ekstra)) {
             ekstras.add(ekstra);
         }
     }
 
-    //remove
     public void removeEkstra(Ekstra ekstra) {
-        if (ekstras.remove(ekstra)) {
+        if (ekstras.contains(ekstra)) {
             ekstras.remove(ekstra);
         }
     }
-    //get
 
-    public ArrayList<Ekstra> getEkstras() {
-        return new ArrayList<>(ekstras);
+    public ArrayList<Udflugt> getUdflugter() {
+        return new ArrayList<>(udflugter);
     }
-//-----------------------------------------------
-    //Tilmelding 0..* -- 0..* Udflugt
 
-    //add
     public void addUdflugt(Udflugt udflugt) {
         if (!udflugter.contains(udflugt)) {
             udflugter.add(udflugt);
@@ -152,68 +124,49 @@ public class Tilmelding {
         }
     }
 
-    //remove
     public void removeUdflugt(Udflugt udflugt) {
-        if (!udflugter.contains(udflugt)) {
-            udflugter.add(udflugt);
-            udflugt.removeTilmelding(this);
+        if (udflugter.contains(udflugt)) {
+            udflugter.remove(udflugt);
+            udflugt.removeTilmeldning(this);
         }
-    }
-    //get
-
-    public ArrayList<Udflugt> getUdflugter() {
-        return new ArrayList<>(udflugter);
     }
 
     public double getSamletPris() {
+
+        long antaldage = ChronoUnit.DAYS.between(this.getAnkomstdato(), this.getAfrejseDato()) + 1;
+        long antalnætter = ChronoUnit.DAYS.between(this.getAnkomstdato(), this.getAfrejseDato());
         double samletPris = 0;
-        double hotelEnkeltprisPris = 0;
-        double hotelDobbeltPris = 0;
-        double ekstraPris = 0;
-        double udflugtPris = 0;
-        long antalDage = ChronoUnit.DAYS.between(ankomstDato,afrejseDato)+1;
-        long antalNætter = antalDage-1;
 
-
-            double konferencePris = konference.getKonferenceAfgift() * antalDage;
-        if(isForedragsholder()||deltager.getFirmaNavn() != null){
-            konferencePris = 0;
+        if(!udflugter.isEmpty()) {
+            for (Udflugt udflugt1 : udflugter) {
+                samletPris += udflugt1.getPris();
+            }
         }
-
         if (hotel != null) {
-            if(ledsager == null) {
-
-                hotelEnkeltprisPris = hotel.getEnkeltpris() * antalNætter;
-            }else {
-                hotelDobbeltPris = hotel.getDobbeltpris() * antalNætter;
-
-            }
-
-
             for (Ekstra ekstra1 : ekstras) {
-                ekstraPris += ekstra1.getPris() * antalNætter;
+                samletPris += ekstra1.getPris() * antalnætter;
             }
-
+            if (ledsager != null) {
+                samletPris += hotel.getDoubleværelsePris() * antalnætter;
+            } else {
+               samletPris += hotel.getEnkeltværeslePris() * antalnætter;
+            }
         }
-
-        for (Udflugt udflugt1 : udflugter) {
-            udflugtPris += udflugt1.getPris();
-
+        if(foredragsHolder == false || deltager.getFirmanavn() != null) {
+            samletPris += konference.getKonkurrenceAfgit() * antaldage;
         }
-
-        return samletPris +=  konferencePris + hotelEnkeltprisPris + hotelDobbeltPris + ekstraPris +
-                udflugtPris;
-
-}
-//---------------------------------------------------------------------------------------------------
+        return samletPris;
+    }
 
 
     @Override
     public String toString() {
         return "Tilmelding{" +
-                "hotel=" + hotel +
-                ", deltager=" + deltager.getNavn() +
-
-                '}';
+                "deltager=" + deltager.getNavn() + ": TlfNr " + deltager.getTlfNr();
     }
 }
+
+
+
+
+

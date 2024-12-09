@@ -9,19 +9,18 @@ public class opg_6 {
 
         String filename = "ulige.txt";
 
-        try(Scanner scan = new Scanner(System.in); PrintWriter printWriter = new PrintWriter(filename)){
+        try (Scanner scan = new Scanner(System.in); PrintWriter printWriter = new PrintWriter(filename)) {
 
 
-
-            for(int i =0;i<=100;i++){
-                if(i%2==1){
+            for (int i = 0; i <= 100; i++) {
+                if (i % 2 == 1) {
 
                     printWriter.println(i);
                 }
             }
             System.out.println("filen er lavet");
 
-        }catch (IOException e){
+        } catch (IOException e) {
             System.out.println(e.getMessage());
         }
     }

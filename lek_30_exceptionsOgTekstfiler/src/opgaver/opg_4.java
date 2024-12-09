@@ -10,11 +10,11 @@ import java.util.Scanner;
 public class opg_4 {
 
     public static void main(String[] args) {
-        ArrayList<Integer>frafil = new ArrayList<>();
+        ArrayList<Integer> frafil = new ArrayList<>();
         File filein = new File("tal.txt");
-        try(Scanner scan = new Scanner(filein)) {
+        try (Scanner scan = new Scanner(filein)) {
             while (scan.hasNextLine()) {
-                frafil.add(scan.nextInt()*2);
+                frafil.add(scan.nextInt() * 2);
 
             }
             System.out.println(frafil);
@@ -25,12 +25,13 @@ public class opg_4 {
             System.out.println("du har fejl");
         }
     }
-    public static void reverselist(ArrayList<Integer>list){
+
+    public static void reverselist(ArrayList<Integer> list) {
         int size = list.size();
-        for(int i = 0; i<size/2;i++){
+        for (int i = 0; i < size / 2; i++) {
             int temp = list.get(i);
-            list.set(i,list.get(size-1-i));
-            list.set(size-1-i,temp);
+            list.set(i, list.get(size - 1 - i));
+            list.set(size - 1 - i, temp);
         }
         /* Explanation: 1. Determine the Size: - The variable `size` stores
          the total number of elements in the ArrayList. `int size = list.size();

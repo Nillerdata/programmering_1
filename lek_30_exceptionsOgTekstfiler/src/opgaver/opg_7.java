@@ -8,7 +8,7 @@ public class opg_7 {
     public static void main(String[] args) {
         String filename = "indtast.txt";
 
-        try(Scanner scan = new Scanner(System.in); PrintWriter printWriter = new PrintWriter(filename)){
+        try (Scanner scan = new Scanner(System.in); PrintWriter printWriter = new PrintWriter(filename)) {
 
             System.out.println("indtast int. -1 afslutter");
             int input = scan.nextInt();
@@ -16,11 +16,11 @@ public class opg_7 {
                 printWriter.println(input);
                 input = scan.nextInt();
             }
-            while(input!= -1);
+            while (input != -1);
             System.out.println("fil gemt");
 
-        }catch (IOException e){
-            System.out.println("der er fejl");
+        } catch (IOException e) {
+            System.out.println("Det er mandag;gå hjem og tag en lur");
         }
     }
 }

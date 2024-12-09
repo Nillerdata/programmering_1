@@ -1,59 +1,59 @@
 package model;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.util.ArrayList;
 
 public class Konference {
+
     private String navn;
     private String adresse;
     private LocalDate startDato;
     private LocalDate slutDato;
     private String kortBeskrivelse;
-    private double konferenceAfgift;
-    //TODO linkattributter
-    private final ArrayList<Hotel> hoteller = new ArrayList<>();
-    private final ArrayList<Udflugt>udflugter = new ArrayList<>();
-    private final ArrayList<Tilmelding>tilmeldinger = new ArrayList<>();
-    //---------------------------------------------------------------------
-    //Constructor
-    public Konference(String navn, String adresse, LocalDate startDato, LocalDate slutDato,
-                      String kortBeskrivelse, double konferenceAfgift) {
+    private int konkurrenceAfgit;
+    private ArrayList<Hotel> hotels = new ArrayList<>();
+    private ArrayList<Udflugt> udflugter = new ArrayList<>();
+    private ArrayList<Tilmelding> tilmeldinger = new ArrayList<>();
+
+
+    public Konference(String navn, String adresse, LocalDate startDato, LocalDate slutDato, String kortBeskrivelse, int konkurrenceAfgit) {
         this.navn = navn;
         this.adresse = adresse;
         this.startDato = startDato;
         this.slutDato = slutDato;
         this.kortBeskrivelse = kortBeskrivelse;
-        this.konferenceAfgift = konferenceAfgift;
+        this.konkurrenceAfgit = konkurrenceAfgit;
     }
-    //gettere
 
     public String getNavn() {
         return navn;
     }
 
-    public String getAdresse() {
-        return adresse;
-    }
-
-    public LocalDate getStartDato() {
-        return startDato;
+    public int getKonkurrenceAfgit() {
+        return konkurrenceAfgit;
     }
 
     public LocalDate getSlutDato() {
         return slutDato;
     }
 
+    public String getAdresse() {
+        return adresse;
+    }
+
+    public ArrayList<Hotel> getHotels() {
+        return hotels;
+    }
+
+    public LocalDate getStartDato() {
+        return startDato;
+    }
+
     public String getKortBeskrivelse() {
         return kortBeskrivelse;
     }
-
-    public double getKonferenceAfgift() {
-        return konferenceAfgift;
-    }
-
-    //-----------------------------------------------------------------------------------------------------
-    //Settere
 
     public void setNavn(String navn) {
         this.navn = navn;
@@ -74,85 +74,59 @@ public class Konference {
     public void setKortBeskrivelse(String kortBeskrivelse) {
         this.kortBeskrivelse = kortBeskrivelse;
     }
-    public void setKonferenceAfgift(double konferenceAfgift) {
-        this.konferenceAfgift = konferenceAfgift;
+
+    public void setKonkurrenceAfgit(int konkurrenceAfgit) {
+        this.konkurrenceAfgit = konkurrenceAfgit;
     }
-    //-------------------------------------------------------------------------------------------------
-    //TODO linkattributter
-    //konference aggregering 0..* -- 0.. * Hotel
-    //add
-    public void addhotel(Hotel hotel){
-        if(!hoteller.contains(hotel)){
-            hoteller.add(hotel);
-            hotel.addKonference(this);
+
+    public void addHotel(Hotel hotel) {
+        if (!hotels.contains(hotel)) {
+            hotels.add(hotel);
+            hotel.addkonference(this);
         }
     }
-    //remove
-    public void removeHotel(Hotel hotel){
-        if(hoteller.contains(hotel)){
-            hoteller.remove(hotel);
+
+    public void removeHotel(Hotel hotel) {
+        if (hotels.contains(hotel)) {
+            hotels.remove(hotel);
             hotel.removeKonference(this);
         }
     }
-    //get
-    public ArrayList<Hotel> getHoteller() {
-        return new ArrayList<>(hoteller);
-    }
-
-    //-------------------------------------------------------------------------------
-    //konference 1 komp -- 0..* udflugt
-
-    //create
-    public Udflugt createUdflugt(LocalDate dato, LocalTime startTidspunkt, LocalTime slutTidspunkt,
-                                 String navn, String mødested, double pris){
-        Udflugt udflugt = new Udflugt(dato,startTidspunkt,slutTidspunkt,navn,mødested,pris,this);
-        udflugter.add(udflugt);
-        return udflugt;
-    }
-    //remove
-    public void removeUdflugt(Udflugt udflugt){
-        if(udflugter.contains(udflugt)){
-            udflugter.remove(udflugt);
-            //mangler måske noget. spørg Margrethe?
-        }
-    }
-    //get
 
     public ArrayList<Udflugt> getUdflugter() {
         return new ArrayList<>(udflugter);
     }
 
-//-----------------------------------------------------------------------------------------------------
+    public Udflugt createUdflugt(LocalDate dato, LocalTime startTidspunkt, LocalTime slutTidspunkt, String navn, String mødested, double pris) {
+        Udflugt udflugt1 = new Udflugt(dato, startTidspunkt, slutTidspunkt, navn, mødested, pris, this);
+        udflugter.add(udflugt1);
+        return udflugt1;
+    }
 
-    //createTilmelding
-    public Tilmelding createTilmelding(LocalDate ankomstDato, LocalDate afrejseDato,boolean foredragsholder,Deltager deltager){
-        Tilmelding tilmelding = new Tilmelding(ankomstDato,afrejseDato,foredragsholder,this, deltager);
+    public void removeUdflugt(Udflugt udflugt) {
+        if (!udflugter.contains(udflugt)) {
+            udflugter.remove(udflugt);
+
+        }
+    }
+
+    public Tilmelding createTilmelding(LocalDate ankomstdato, LocalDate afrejseDato, Boolean foredragsHolder, Deltager deltager) {
+        Tilmelding tilmelding = new Tilmelding(ankomstdato, afrejseDato, foredragsHolder, deltager, this);
         tilmeldinger.add(tilmelding);
-
         return tilmelding;
+
     }
 
     public ArrayList<Tilmelding> getTilmeldinger() {
-        return new ArrayList<>(tilmeldinger) ;
+        return new ArrayList<>(tilmeldinger);
     }
-    //------------------------------------------------------------------------------------------------------
-    //tostringMetode
+
 
     @Override
     public String toString() {
         return "Konference{" +
                 "navn='" + navn + '\'' +
-                ", adresse='" + adresse + '\'' +
-                ", startDato=" + startDato +
-                ", slutDato=" + slutDato +
                 ", kortBeskrivelse='" + kortBeskrivelse + '\'' +
-                ", konferenceAfgift=" + konferenceAfgift +
-                ", tilmelding=" + tilmeldinger +
-                '}';
+                ", konkurrenceAfgit=" + konkurrenceAfgit;
     }
-
-
-    //TODO metoder
-
-
 }
