@@ -7,9 +7,10 @@ import java.io.PrintWriter;
 import java.util.Scanner;
 
 public class opg_5 {
-    public static void main(String[] args)throws FileNotFoundException  {
-fletAlleHeltal("fileName1","fileName2","fileNameNy");
+    public static void main(String[] args) throws FileNotFoundException {
+        fletAlleHeltal("fileName1", "fileName2", "fileNameNy");
     }
+
     /**
      * Laver en sorteret fil i fileNameNy der indeholder alle
      * heltal fra fileName1 og fileName2 (MAX_VALUE skal ikke i
@@ -31,12 +32,12 @@ fletAlleHeltal("fileName1","fileName2","fileNameNy");
             int i2 = sc2.hasNext() ? sc2.nextInt() : Integer.MAX_VALUE;
             while (i1 != Integer.MAX_VALUE && i2 != Integer.MAX_VALUE) {
                 if (i1 <= i2) {
-                    if(i1 != Integer.MAX_VALUE){
+                    if (i1 != Integer.MAX_VALUE) {
                         printWriter.println(i1);
                     }
                     i1 = sc1.hasNext() ? sc1.nextInt() : Integer.MAX_VALUE;
                 } else {
-                    if(i2 != Integer.MAX_VALUE){
+                    if (i2 != Integer.MAX_VALUE) {
                         printWriter.println(i2);
                     }
                     i2 = sc2.hasNext() ? sc2.nextInt() : Integer.MAX_VALUE;
@@ -46,8 +47,7 @@ fletAlleHeltal("fileName1","fileName2","fileNameNy");
 
         } catch (Exception e) {
             System.out.println(e.getMessage());
-        }
-        finally {
+        } finally {
             printWriter.close();
             sc1.close();
             sc2.close();

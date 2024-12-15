@@ -24,17 +24,17 @@ public class opg_3 {
 //        list1.add(c5);
 //
 //        Customer[]l2 = {c1,c6,c7,c8,c9,c10};
-        Customer c1 = new Customer("Anders", "Glensgaard", 24);
-        Customer c2 = new Customer("Bob", "Byggemand", 30);
-        Customer c3 = new Customer("Christoffer", "Byggemand", 30);
-        Customer c4 = new Customer("Dennis", "Byggemand", 30);
-        Customer c5 = new Customer("Erik", "Albertsen", 32);
-        Customer c6 = new Customer("Frede", "Gent", 30);
+        Customer c1 = new Customer("Anders", "Hippity", 24);
+        Customer c2 = new Customer("Bob", "Hoppity", 30);
+        Customer c3 = new Customer("Christoffer", "This", 30);
+        Customer c4 = new Customer("Dennis", "Code", 30);
+        Customer c5 = new Customer("Erik", "Is", 32);
+        Customer c6 = new Customer("Frede", "My", 30);
 
 
-        Customer c7 = new Customer("Gert", "Madsen", 45);
-        Customer c8 = new Customer("Hans", "Jensen", 78);
-        Customer c9 = new Customer("Ingemann", "John", 67);
+        Customer c7 = new Customer("Gert", "God", 45);
+        Customer c8 = new Customer("Hans", "Damn", 78);
+        Customer c9 = new Customer("Ingemann", "Property", 67);
 
         ArrayList<Customer> foretningsListe = new ArrayList<>();
         foretningsListe.add(c1);
@@ -44,9 +44,10 @@ public class opg_3 {
         foretningsListe.add(c5);
         foretningsListe.add(c6);
 
-        Customer[] dårligeBetalere = {c2,c3,c7,c8,c9};
-        System.out.println(goodCustomers(foretningsListe,dårligeBetalere));
+        Customer[] dårligeBetalere = {c2, c3, c7, c8, c9};
+        System.out.println(goodCustomers(foretningsListe, dårligeBetalere));
     }
+
     /**
      * Returnerer en sorteret ArrayList der indeholder alle
      * customers fra l1 der ikke er i l2
@@ -54,25 +55,25 @@ public class opg_3 {
      * indeholder ikke tomme pladser
      */
     public static ArrayList goodCustomers(ArrayList<Customer> l1,
-                                          Customer[] l2){
+                                          Customer[] l2) {
+
         ArrayList<Customer> godkendte = new ArrayList<>();
         int i1 = 0;
         int i2 = 0;
-        while(i1 < l1.size() && i2 < l2.length){
-        if(l1.get(i1).getFirstName().compareTo(l2[i2].getFirstName())<0){
-            godkendte.add(l1.get(i1));
-            i1++;
+        while (i1 < l1.size() && i2 < l2.length) {
+            if (l1.get(i1).getFirstName().compareTo(l2[i2].getFirstName()) < 0) {
+                godkendte.add(l1.get(i1));
+                i1++;
 
-        } else if(l1.get(i1).getFirstName().compareTo(l2[i2].getFirstName())>0) {
-            i2++;
+            } else if (l1.get(i1).getFirstName().compareTo(l2[i2].getFirstName()) > 0) {
+                i2++;
 
-        }
-        else {
-            i1++;
-            i2++;
-        }
-
+            } else {
+                i1++;
+                i2++;
             }
+
+        }
         while (i1 < l1.size()) {
             godkendte.add(l1.get(i1));
             i1++;

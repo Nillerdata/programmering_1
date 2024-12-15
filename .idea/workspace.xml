@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6db11fe-b40f-4d1a-89e7-cfa8131a6d61" name="Changes" comment="" />
+    <list default="true" id="d6db11fe-b40f-4d1a-89e7-cfa8131a6d61" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lek_34_Fletning_af_sekvenser/src/opgaver/opg_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/lek_34_Fletning_af_sekvenser/src/opgaver/opg_2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lek_34_Fletning_af_sekvenser/src/opgaver/opg_3.java" beforeDir="false" afterPath="$PROJECT_DIR$/lek_34_Fletning_af_sekvenser/src/opgaver/opg_3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lek_34_Fletning_af_sekvenser/src/opgaver/opg_4.java" beforeDir="false" afterPath="$PROJECT_DIR$/lek_34_Fletning_af_sekvenser/src/opgaver/opg_4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lek_34_Fletning_af_sekvenser/src/opgaver/opg_5.java" beforeDir="false" afterPath="$PROJECT_DIR$/lek_34_Fletning_af_sekvenser/src/opgaver/opg_5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lek_34_Fletning_af_sekvenser/src/opgaver/opg_7.java" beforeDir="false" afterPath="$PROJECT_DIR$/lek_34_Fletning_af_sekvenser/src/opgaver/opg_7.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +24,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="jar://$USER_HOME$/.jdks/corretto-21.0.4/lib/src.zip!/java.base/java/util/Scanner.java" root0="SKIP_INSPECTION" />
@@ -60,6 +70,7 @@
     "Application.ChildApp.executor": "Run",
     "Application.Craps.executor": "Run",
     "Application.EmployeeApp.executor": "Run",
+    "Application.EnhancedSwitch.executor": "Run",
     "Application.ExceptionApp.executor": "Run",
     "Application.GUI_APP.executor": "Run",
     "Application.Gui.App.executor": "Run",
@@ -85,6 +96,7 @@
     "Application.SwimmerApp.executor": "Run",
     "Application.TeamApp.executor": "Run",
     "Application.Timetabel.executor": "Run",
+    "Application.TraditionelSwitch.executor": "Run",
     "Application.YatzyApp.executor": "Run",
     "Application.aflevering_opg_1.executor": "Run",
     "Application.app.executor": "Run",
@@ -127,6 +139,7 @@
     "Application.model.SwimmerApp (1).executor": "Run",
     "Application.model.SwimmerApp.executor": "Run",
     "Application.moms.executor": "Run",
+    "Application.numberOfDaysInMonth.executor": "Run",
     "Application.operator_challenge.executor": "Run",
     "Application.opg2.executor": "Run",
     "Application.opg2_og6.executor": "Run",
@@ -151,7 +164,7 @@
     "Application.opg_6.executor": "Run",
     "Application.opg_6_2_5.executor": "Run",
     "Application.opg_6_2_6.executor": "Run",
-    "Application.opg_7.executor": "Debug",
+    "Application.opg_7.executor": "Run",
     "Application.opg_7_6.executor": "Run",
     "Application.opg_8.executor": "Run",
     "Application.opg_hus.App.executor": "Run",
@@ -200,8 +213,9 @@
     "Repository.Attach.JavaDocs": "false",
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "C:/Users/niels/IdeaProjects/programming 1/lek_34_Fletning_af_sekvenser/src",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "SDKs",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.pluginManager",
@@ -227,24 +241,24 @@
       <recent name="opgave_1" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.opg_7">
-    <configuration name="opg_3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="opgaver.opg_3" />
-      <module name="lek_34_Fletning_af_sekvenser" />
+  <component name="RunManager" selected="Application.numberOfDaysInMonth">
+    <configuration name="EnhancedSwitch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Switch.EnhancedSwitch" />
+      <module name="course" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="opg_4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="opgaver.opg_4" />
-      <module name="lek_34_Fletning_af_sekvenser" />
+    <configuration name="TraditionelSwitch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Switch.TraditionelSwitch" />
+      <module name="course" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="opg_5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="opgaver.opg_5" />
-      <module name="lek_34_Fletning_af_sekvenser" />
+    <configuration name="numberOfDaysInMonth" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Switch.numberOfDaysInMonth" />
+      <module name="course" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -265,11 +279,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.numberOfDaysInMonth" />
         <item itemvalue="Application.opg_7" />
+        <item itemvalue="Application.EnhancedSwitch" />
+        <item itemvalue="Application.TraditionelSwitch" />
         <item itemvalue="Application.opg_6" />
-        <item itemvalue="Application.opg_5" />
-        <item itemvalue="Application.opg_4" />
-        <item itemvalue="Application.opg_3" />
       </list>
     </recent_temporary>
   </component>

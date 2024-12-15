@@ -45,7 +45,7 @@ public class opg_2 {
         }
 
         // Returnerer arrayet samlet med de fælles elementer
-        return Arrays.copyOf(samlet,j);
+        return Arrays.copyOf(samlet, j);
     }
 }
 
